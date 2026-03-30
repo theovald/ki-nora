@@ -29,7 +29,7 @@ def test_index_html_content():
     # Check for speaker image
     img = soup.find("img", class_="hero-image")
     assert img is not None
-    assert img["src"] == "speaker.jpg"
+    assert img["src"] == "speaker.jpeg"
 
     # Check for contact form
     form = soup.find("form", id="booking-form")
