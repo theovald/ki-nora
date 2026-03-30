@@ -31,6 +31,10 @@ def test_index_html_content():
     assert img is not None
     assert img["src"] == "speaker.jpeg"
 
+    # Check we have 4 topic cards
+    topic_cards = soup.find_all("div", class_="topic-card")
+    assert len(topic_cards) >= 4
+
     # Check for contact form
     form = soup.find("form", id="booking-form")
     assert form is not None
