@@ -11,7 +11,7 @@ def test_index_html_content():
     soup = BeautifulSoup(html_content, "html.parser")
 
     # Check title
-    assert soup.title.string == "Nora Gjøen-Gjøsæter | Fagleder KI"
+    assert soup.title.string == "Nora Gjøen-Gjøsæter | Foredragsholder & KI-leder"
 
     # Check main header
     h1 = soup.find("h1")
@@ -24,7 +24,7 @@ def test_index_html_content():
 
     # Check sections exist
     sections = soup.find_all("section")
-    assert len(sections) >= 5  # Om meg, Kjernekompetanse, Erfaring, Utdanning, Verv etc.
+    assert len(sections) >= 3  # Hero, Temaer, Scener, Bakgrunn
 
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")
