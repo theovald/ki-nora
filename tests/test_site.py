@@ -24,12 +24,17 @@ def test_index_html_content():
 
     # Check sections exist
     sections = soup.find_all("section")
-    assert len(sections) >= 3  # Hero-split, Temaer, Scener, Bakgrunn
+    assert len(sections) >= 4  # Hero-split, Temaer, Scener, Bakgrunn, Booking
 
     # Check for speaker image
     img = soup.find("img", class_="hero-image")
     assert img is not None
     assert img["src"] == "speaker.jpg"
+
+    # Check for contact form
+    form = soup.find("form", id="booking-form")
+    assert form is not None
+    assert form["action"] == "mailto:nora@kantega.no"
 
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")

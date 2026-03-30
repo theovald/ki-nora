@@ -1,25 +1,39 @@
 :root {
+    /* Kantega Brand Colors */
+    --k-dark-purple: #27003D;
+    --k-dark-purple-light: #36015B;
+    --k-red: #EE3A64;
+    --k-red-dark: #D3335E;
+    --k-blue: #19254F;
+    --k-teal: #028EA7;
+    --k-yellow: #F49727;
+    --k-white: #FFF8FC;
+    --k-gray-mid: #4e575b;
+    --k-gray-light: #f2f2f2;
+
     /* Light Theme Variables */
-    --bg-color: #ffffff;
-    --text-color: #1a1a1a;
-    --text-muted: #555555;
-    --primary-color: #2563eb;
+    --bg-color: var(--k-white);
+    --text-color: var(--k-dark-purple);
+    --text-muted: var(--k-gray-mid);
+    --primary-color: var(--k-red);
+    --primary-hover: var(--k-red-dark);
     --border-color: #e5e7eb;
-    --card-bg: #f9fafb;
-    --tag-bg: #e0e7ff;
-    --tag-text: #1d4ed8;
+    --card-bg: #ffffff;
+    --tag-bg: var(--k-gray-light);
+    --tag-text: var(--k-dark-purple);
 }
 
 body.dark-theme {
-    /* Dark Theme Variables */
-    --bg-color: #0f172a;
-    --text-color: #f8fafc;
-    --text-muted: #94a3b8;
-    --primary-color: #60a5fa;
-    --border-color: #334155;
-    --card-bg: #1e293b;
-    --tag-bg: #1e3a8a;
-    --tag-text: #bfdbfe;
+    /* Dark Theme Variables (adapted from brand) */
+    --bg-color: var(--k-dark-purple);
+    --text-color: var(--k-white);
+    --text-muted: #b0a3b9;
+    --primary-color: var(--k-red);
+    --primary-hover: #ff507e;
+    --border-color: var(--k-dark-purple-light);
+    --card-bg: #1e002e;
+    --tag-bg: var(--k-dark-purple-light);
+    --tag-text: var(--k-white);
 }
 
 * {
@@ -29,7 +43,7 @@ body.dark-theme {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -175,36 +189,47 @@ a:hover {
 .cta-button {
     display: inline-block;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--k-white);
     padding: 0.8rem 1.5rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    border-radius: 0; /* Kantega box style */
+    font-weight: 700;
     text-decoration: none;
     transition: background-color 0.2s, transform 0.2s;
+    border: 2px solid var(--primary-color);
 }
 
 .cta-button:hover {
-    background-color: #1d4ed8;
-    color: #fff;
+    background-color: var(--primary-hover);
+    color: var(--k-white);
+    border-color: var(--primary-hover);
     transform: translateY(-2px);
 }
 
 body.dark-theme .cta-button {
-    color: #1a1a1a;
+    color: var(--k-white);
 }
 
 body.dark-theme .cta-button:hover {
-    background-color: #93c5fd;
+    background-color: var(--primary-hover);
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--text-color);
-    border-bottom: 2px solid var(--primary-color);
-    display: inline-block;
-    padding-bottom: 0.25rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    height: 3px;
+    background-color: var(--primary-color);
 }
 
 h3 {
@@ -229,9 +254,9 @@ p {
 .topic-card {
     background-color: var(--card-bg);
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0; /* Kantega strict box */
     border: 1px solid var(--border-color);
-    transition: transform 0.2s;
+    transition: transform 0.2s, border-color 0.2s;
     display: flex;
     flex-direction: column;
 }
@@ -347,6 +372,50 @@ p {
 
 .background-list strong {
     color: var(--text-color);
+}
+
+/* Form Styles */
+.contact-form {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* Experience */
