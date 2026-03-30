@@ -24,7 +24,12 @@ def test_index_html_content():
 
     # Check sections exist
     sections = soup.find_all("section")
-    assert len(sections) >= 3  # Hero, Temaer, Scener, Bakgrunn
+    assert len(sections) >= 3  # Hero-split, Temaer, Scener, Bakgrunn
+
+    # Check for speaker image
+    img = soup.find("img", class_="hero-image")
+    assert img is not None
+    assert img["src"] == "speaker.jpg"
 
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")
