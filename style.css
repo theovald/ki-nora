@@ -584,3 +584,48 @@ body:not(.dark-theme) .kantega-logo {
         grid-template-columns: 1fr;
     }
 }
+/* Form Path Selector */
+.form-path-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--card-bg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.path-btn {
+    flex: 1;
+    min-width: 150px;
+    background: transparent;
+    border: none;
+    padding: 0.8rem 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s, color 0.2s;
+    text-align: center;
+}
+
+.path-btn:hover {
+    background-color: var(--bg-color);
+}
+
+.path-btn.active {
+    background-color: var(--primary-color);
+    color: var(--k-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body.dark-theme .path-btn.active {
+    color: var(--k-white);
+}
+
+.form-group.hidden {
+    display: none;
+}
