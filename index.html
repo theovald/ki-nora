@@ -164,19 +164,37 @@
                 <h2>Forespørsel om foredrag</h2>
                 <p>Fyll ut skjemaet under for å sende en uforpliktende forespørsel, eller send en e-post direkte til <a href="mailto:nora@kantega.no" style="color: var(--primary-color);">nora@kantega.no</a>.</p>
 
-                <form class="contact-form" action="mailto:nora@kantega.no" method="GET" enctype="text/plain" id="booking-form">
+                <form class="contact-form" action="https://formspree.io/f/mqaelrzo" method="POST" id="booking-form">
                     <div class="form-group">
-                        <label for="subject">Tema / Anledning</label>
-                        <input type="text" id="subject" name="subject" placeholder="F.eks. Foredrag om KI på ledersamling, eller tilpasset tema">
+                        <label for="name">Ditt navn *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ola Nordmann">
                     </div>
 
                     <div class="form-group">
-                        <label for="body">Beskjed</label>
-                        <textarea id="body" name="body" rows="5" placeholder="Litt om arrangementet, dato, målgruppe..."></textarea>
+                        <label for="email">Din e-post *</label>
+                        <input type="email" id="email" name="email" required placeholder="ola@bedrift.no">
                     </div>
 
-                    <button type="submit" class="cta-button">Åpne e-post</button>
-                    <p class="form-note">Dette vil åpne e-postprogrammet ditt. Du kan også bare klikke på "Åpne e-post" og skrive meldingen direkte i programmet ditt.</p>
+                    <div class="form-group">
+                        <label for="subject">Tema / Anledning *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="F.eks. Foredrag om KI på ledersamling">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Ønsket dato (valgfritt)</label>
+                        <input type="date" id="date" name="date" style="font-family: inherit;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="body">Beskjed (valgfritt)</label>
+                        <textarea id="body" name="message" rows="5" placeholder="Litt om arrangementet, målgruppe, forventninger..."></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="cta-button">Send forespørsel</button>
+                    <p class="form-note">Meldingen sendes direkte til min e-post, og jeg svarer deg så raskt jeg kan.</p>
                 </form>
             </section>
         </main>

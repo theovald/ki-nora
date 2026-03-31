@@ -39,6 +39,11 @@ def test_index_html_content():
     vestland_img = soup.find("img", src="vestland26.png")
     assert vestland_img is not None
 
+    # Check for formspree contact form
+    form = soup.find("form", id="booking-form")
+    assert form is not None
+    assert "formspree.io" in form.get("action", "")
+
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")
     assert css_link is not None
