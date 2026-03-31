@@ -44,6 +44,10 @@ def test_index_html_content():
     assert form is not None
     assert "formspree.io" in form.get("action", "")
 
+    # Check for form status div (used for async submission feedback)
+    status_div = soup.find("div", id="form-status")
+    assert status_div is not None
+
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")
     assert css_link is not None

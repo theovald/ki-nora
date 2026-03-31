@@ -164,7 +164,7 @@
                 <h2>Forespørsel om foredrag</h2>
                 <p>Fyll ut skjemaet under for å sende en uforpliktende forespørsel, eller send en e-post direkte til <a href="mailto:nora@kantega.no" style="color: var(--primary-color);">nora@kantega.no</a>.</p>
 
-                <form class="contact-form" action="https://formspree.io/f/mqaelrzo" method="POST" id="booking-form">
+                <form class="contact-form" action="https://formspree.io/f/mykbjvel" method="POST" id="booking-form">
                     <div class="form-group">
                         <label for="name">Ditt navn *</label>
                         <input type="text" id="name" name="name" required placeholder="Ola Nordmann">
@@ -193,8 +193,10 @@
                     <!-- Honeypot anti-spam -->
                     <input type="text" name="_gotcha" style="display:none" />
 
-                    <button type="submit" class="cta-button">Send forespørsel</button>
+                    <button type="submit" class="cta-button" id="submit-button">Send forespørsel</button>
                     <p class="form-note">Meldingen sendes direkte til min e-post, og jeg svarer deg så raskt jeg kan.</p>
+
+                    <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 4px; font-weight: 600;"></div>
                 </form>
             </section>
         </main>
