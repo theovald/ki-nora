@@ -11,10 +11,3 @@ __pycache__/
 
 # Claude memory / config
 .claude/
-
-# Temporary patch scripts
-patch.html
-fix_html.py
-fix_grid.py
-fix_leveregler.py
-patch_script.js
