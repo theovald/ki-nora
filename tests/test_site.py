@@ -29,7 +29,7 @@ def test_index_html_content():
     # Check for speaker image
     img = soup.find("img", class_="hero-image")
     assert img is not None
-    assert img["src"] == "speaker.jpeg"
+    assert img["src"] == "images/speaker.jpeg"
 
     # Check we have 4 topic cards
     topic_cards = soup.find_all("div", class_="topic-card")
@@ -40,7 +40,7 @@ def test_index_html_content():
     assert len(verv_items) >= 2
 
     # Check for extra image
-    vestland_img = soup.find("img", src="vestland26.png")
+    vestland_img = soup.find("img", src="images/vestland26.png")
     assert vestland_img is not None
 
     # Check for formspree contact form
