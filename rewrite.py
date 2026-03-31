@@ -1,0 +1,303 @@
+import os
+
+html = """<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora Gjøen-Gjøsæter | Foredragsholder & KI-leder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div>
+                    <h1>Nora Gjøen-Gjøsæter</h1>
+                    <p class="subtitle">Foredragsholder & leder for kunstig intelligens</p>
+                    <div class="contact-info">
+                        <a href="#booking">Booking</a>
+                        <span>•</span>
+                        <a href="mailto:nora@kantega.no">nora@kantega.no</a>
+                        <span>•</span>
+                        <a href="tel:+4795820097">+47 958 20 097</a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com/in/ki-nora" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="header-logo-wrapper">
+                    <a href="https://www.kantega.no" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Kantega_logo_hvit.svg" alt="Kantega logo" class="header-kantega-logo">
+                    </a>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+        </header>
+
+        <main>
+            <section class="hero-split">
+                <div class="hero-text">
+                    <h2 class="hero-title">Jobber for å gjøre Bergen til Norges hovedstad for KI.</h2>
+                    <p class="lead-text">
+                        Foredragsholder, avdelingsleder og strategisk KI-rådgiver med superkrefter fra <a href="https://www.kantega.no" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: 600; text-decoration: underline;">resten av Kantega</a>.
+                    </p>
+                    <p class="sub-lead-text">
+                        En engasjerende formidler som treffer i skjæringspunktet mellom tung teknologi, endringsledelse og prestasjonskultur. Stiller også gjerne i paneldebatter.
+                    </p>
+                    <div class="hero-actions" style="margin-top: 2.5rem;">
+                        <a href="#booking" class="cta-button">Forespørsel om foredrag</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/speaker.jpeg" alt="Nora på scenen" class="hero-image">
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Mine foredrag</h2>
+                <p>Foredragene skreddersys alltid publikum – enten det er toppledergrupper, tekniske utviklerkonferanser, eller bedriftssamlinger. Her er noen av mine mest etterspurte temaer, men jeg utformer gjerne <strong>tilpassede tema</strong> etter deres spesifikke behov.</p>
+
+                <div class="grid-3">
+                    <div class="topic-card">
+                        <div class="topic-icon" style="margin-bottom: 1.5rem;">
+                            <img src="images/Situasjoner/svg-er/AI.svg" alt="Kunstig intelligens" style="height: 50px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3>Kunstig intelligens i praksis</h3>
+                        <p>Hvordan dra reell nytte av egne data med KI? Forbi hypen: Praktisk implementering, generativ KI, dataplattform som fundament, og hvordan teknologi og forretning må spille sammen for å skape verdi.</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon" style="margin-bottom: 1.5rem;">
+                            <img src="images/Situasjoner/svg-er/Sikkerhet.svg" alt="Sikkerhet og etikk" style="height: 50px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3>Etikk, bias og ansvarlig AI</h3>
+                        <p>"Brilliant but Biased". Hvilket ansvar har vi når vi bygger og bruker KI-systemer? Om store språkmodeller, implisitt bias, hallusinering og hvorfor tverrfaglighet er den beste medisinen mot algoritmisk slagside.</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon" style="margin-bottom: 1.5rem;">
+                            <img src="images/Situasjoner/svg-er/Endringsledelse.svg" alt="Prestasjon og ledelse" style="height: 50px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3>Prestasjon og ledelse</h3>
+                        <p>"Fra garderobeprat til git commit". Lærdommer fra en karriere som landslagskeeper i fotball, overført til moderne tech-team. Om disiplin, autonomi, å bygge psykologisk trygghet og levere under press.</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon" style="margin-bottom: 1.5rem;">
+                            <img src="images/Situasjoner/svg-er/Rakett.svg" alt="Innovasjon" style="height: 50px; width: auto; object-fit: contain;">
+                        </div>
+                        <h3>Fra pilot til produksjon</h3>
+                        <p>Hvorfor dør så mange maskinlæringsprosjekter i pilotfasen? Om viktigheten av god dataarkitektur, MLOps og tverrfaglige team for å bygge robuste KI-systemer som faktisk skaper varig verdi i produksjon.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Utvalgte scener</h2>
+                <div class="stage-list">
+                    <div class="stage-item">
+                        <div class="stage-year">2026</div>
+                        <div class="stage-content">
+                            <h4>Vestlandskonferansen 2026</h4>
+                            <p>Paneldebatt: Fra folkestyre til plattformstyre</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2026</div>
+                        <div class="stage-content">
+                            <h4>Booster Conference</h4>
+                            <p>Hvordan dra nytte av egne data med KI</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2025</div>
+                        <div class="stage-content">
+                            <h4>Arendalsuka</h4>
+                            <p>Det er egne data som gir deg KI-muskler (Paneldebatt)</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2025</div>
+                        <div class="stage-content">
+                            <h4>JavaZone</h4>
+                            <p>Fra garderobeprat til git commit</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2025</div>
+                        <div class="stage-content">
+                            <h4>Norway Fintech Festival</h4>
+                            <p>AI: Brilliant but Biased?</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2025</div>
+                        <div class="stage-content">
+                            <h4>Oda Network / SheCodes</h4>
+                            <p>AI-verktøy for koding – En jungel av muligheter</p>
+                        </div>
+                    </div>
+                    <div class="stage-item">
+                        <div class="stage-year">2023</div>
+                        <div class="stage-content">
+                            <h4>JavaZone</h4>
+                            <p>Anta bias. Alltid.</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                    <em>Jeg har også holdt interne foredrag, strategiske workshops og ledersamlinger for blant annet <strong>DNB, Elmera Group, TV 2, Enova, BOB, Bergen Næringsråd, NTE, Favna og Building Innovation</strong>.</em>
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Rådgivning, kurs og KI-utvikling</h2>
+                <p>Utover tradisjonelle foredrag og keynotes, tilbyr jeg og resten av <strong>KI-avdelingen i Bergen</strong> dypere engasjementer for virksomheter på Vestlandet som er klare for å ta steget fra prat til praksis. Vi jobber også tett sammen med Kantegas nasjonale KI-miljø (<a href="https://www.kantega.ai" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: 600;">kantega.ai</a>) for å levere tyngde og kapasitet på de største prosjektene.</p>
+
+                <div class="grid-2" style="margin-top: 2rem;">
+                    <div class="verv-item" style="border-top: 4px solid var(--primary-color);">
+                        <h3>Strategisk rådgivning & kurs</h3>
+                        <p style="margin-top: 0.5rem; margin-bottom: 1rem;">For ledergrupper, styrer og beslutningstakere som trenger å forstå landskapet for å stake ut riktig kurs.</p>
+                        <ul class="skills-list" style="font-size: 0.95rem;">
+                            <li><strong>AI-mulighetsstudie:</strong> Heldagsworkshop for å kartlegge og prioritere KI-use cases med reell forretningsverdi, inkludert vurdering av verdi, kostnader og risiko.</li>
+                            <li><strong>AI-kurs for ledere:</strong> Skreddersydd opplæring for å forstå hvordan virksomheten kan utnytte KI og egne data for å skape bedre tjenester.</li>
+                            <li><strong>Datastrategi:</strong> Hvordan bygge en dataplattform og organisasjon som tåler fremtidens krav.</li>
+                        </ul>
+                    </div>
+
+                    <div class="verv-item" style="border-top: 4px solid var(--primary-color);">
+                        <h3>Operativ KI-utvikling</h3>
+                        <p style="margin-top: 0.5rem; margin-bottom: 1rem;">KI-avdelingen i Bergen bygger skreddersydde løsninger som faktisk settes i produksjon.</p>
+                        <ul class="skills-list" style="font-size: 0.95rem;">
+                            <li><strong>Fra pilot til prosjekt:</strong> Utvikling av AI-prototyper (som chatbots basert på egne data via RAG) til fullverdige, robuste produksjonsløsninger.</li>
+                            <li><strong>Anvendt & ansvarlig KI:</strong> Vi bygger løsninger med innebygd personvern, sikkerhet og sporbarhet.</li>
+                            <li><strong>Arkitektur & MLOps:</strong> Rigging av infrastruktur, dataflyt og plattformer som sikrer at modellene skaper verdi over tid.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2>Anvendt KI i praksis</h2>
+                <p>Når vi snakker om kunstig intelligens, er det viktig å vise hva det faktisk betyr i den virkelige verden. Under ser du en liten smakebit fra en pilot KI-avdelingen bygget for REN. Løsningen demonstrerer hvordan vi kan bruke store språkmodeller (GPT-4) sammen med kundens egne proprietære data (RAG) for å skape et interaktivt og intelligent søk i fagspesifikk dokumentasjon.</p>
+                <div class="video-container" style="margin-top: 1.5rem; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 4px; border: 1px solid var(--border-color); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        <source src="videos/REN.mp4" type="video/mp4">
+                        Din nettleser støtter ikke videoavspilling.
+                    </video>
+                </div>
+            </section>
+
+            <section class="section about-speaker">
+                <h2>Om meg</h2>
+                <div class="about-content">
+                    <p>I tillegg til å stå på scenen, står jeg midt i den operative KI-utviklingen. Som tidligere eliteseriespiller og landslagskeeper, tar jeg med meg en vinnerkultur preget av høyt tempo, lagånd og presisjon, som overføres direkte til tech-scenen og ledelsesrommene. Jeg brenner for kunnskapsdeling og er kjent for å være uredd, engasjert og ærlig i min formidling.</p>
+                    <ul class="background-list" style="margin-top: 1.5rem;">
+                        <li>
+                            <img src="images/Kantega_logo_hvit.svg" alt="Kantega logo" class="kantega-logo">
+                            <strong>Leder for KI i Bergen:</strong> Totalansvar for KI-avdelingen til Kantega i Bergen og medeier. Rådgiver for kunder på strategisk nivå og utvikler fagmiljøet internt. Kantega er et 100% ansatteid IT-konsulentselskap som bygger samfunnskritisk infrastruktur.
+                        </li>
+                        <li><strong>Drivkraft i fagmiljøet:</strong> Leder programkomiteen for teknologikonferansen <em>Make Data Smart</em> i Bergen, og styremedlem i <em>Dataforeningen Region Vest</em>.</li>
+                        <li><strong>Akademisk tyngde:</strong> Mastergrad i statistikk (finans, forsikring og risiko) fra UiB, bachelor i matematikk og økonomi fra UiO, og årsstudium i organisasjon og ledelse fra HINN.</li>
+                    </ul>
+                </div>
+
+                <div class="leveregler-section" style="margin-top: 3rem; background-color: var(--card-bg); padding: 2rem; border-radius: 4px; border: 1px solid var(--border-color);">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem;">Våre leveregler i Kantega</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1.5rem; text-align: center;">
+                        <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
+                            <img src="images/svg-er av levereglene/Skap verdi.svg" alt="Skap verdi" style="height: 60px; margin-bottom: 0.5rem; ">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Skap verdi</span>
+                        </div>
+                        <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
+                            <img src="images/svg-er av levereglene/Ta initiativ.svg" alt="Ta initiativ" style="height: 60px; margin-bottom: 0.5rem; ">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Ta initiativ</span>
+                        </div>
+                        <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
+                            <img src="images/svg-er av levereglene/Vis lidenskap.svg" alt="Vis lidenskap" style="height: 60px; margin-bottom: 0.5rem; ">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Vis lidenskap</span>
+                        </div>
+                        <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
+                            <img src="images/svg-er av levereglene/Vær nysgjerrig.svg" alt="Vær nysgjerrig" style="height: 60px; margin-bottom: 0.5rem; ">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Vær nysgjerrig</span>
+                        </div>
+                        <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
+                            <img src="images/svg-er av levereglene/løft hverandre.svg" alt="Løft hverandre" style="height: 60px; margin-bottom: 0.5rem; ">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Løft hverandre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondary-image-wrapper" style="margin-top: 3rem; text-align: center;">
+                    <img src="images/vestland26.png" alt="Nora på Vestlandskonferansen" style="max-width: 100%; border-radius: 0; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Fra Vestlandskonferansen 2026: Paneldebatt om "Fra folkestyre til plattformstyre"</p>
+                </div>
+            </section>
+
+            <section id="booking" class="section booking-section">
+                <h2>Forespørsel og kontakt</h2>
+                <p>Hva kan vi hjelpe deg med? Velg området som passer best, så tilpasser vi løsningen for deg. <em>Pris for foredrag og oppdrag avtales nærmere basert på deres behov.</em></p>
+
+                <div class="form-path-selector" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
+                    <button type="button" class="path-btn active" data-path="foredrag">🎙️ Foredrag</button>
+                    <button type="button" class="path-btn" data-path="radgivning">💡 Strategisk rådgivning</button>
+                    <button type="button" class="path-btn" data-path="utvikling">⚙️ KI-utvikling & prosjekt</button>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mqaelrzo" method="POST" id="booking-form" style="margin-top: 0;">
+                    <input type="hidden" id="inquiry-type" name="Henvendelse_type" value="Foredrag">
+
+                    <div class="form-group">
+                        <label for="name">Ditt navn *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ditt navn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Din e-post *</label>
+                        <input type="email" id="email" name="email" required placeholder="din@epost.no">
+                    </div>
+
+                    <div class="form-group" id="subject-group">
+                        <label for="subject" id="subject-label">Tema for foredraget *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="F.eks. Kunstig intelligens i praksis">
+                    </div>
+
+                    <div class="form-group" id="date-group">
+                        <label for="date">Ønsket dato (valgfritt)</label>
+                        <input type="date" id="date" name="date" style="font-family: inherit;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="body" id="body-label">Litt om arrangementet og målgruppen (valgfritt)</label>
+                        <textarea id="body" name="message" rows="5" placeholder="Skriv din melding her..."></textarea>
+                    </div>
+
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="cta-button" id="submit-button">Send forespørsel</button>
+                    <p class="form-note">Meldingen sendes direkte til min e-post, og jeg svarer deg så raskt jeg kan.</p>
+
+                    <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 4px; font-weight: 600;"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Nora Gjøen-Gjøsæter. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html)
