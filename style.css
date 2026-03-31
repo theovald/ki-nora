@@ -81,7 +81,7 @@ body {
 }
 
 .header-kantega-logo {
-    height: 40px;
+    height: 60px; /* Increased from 40px */
     opacity: 0.9;
     transition: opacity 0.2s;
 }

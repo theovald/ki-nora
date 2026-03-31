@@ -1,0 +1,20 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Claude memory / config
+.claude/
+
+# Temporary patch scripts
+patch.html
+fix_html.py
+fix_grid.py
+fix_leveregler.py
+patch_script.js
