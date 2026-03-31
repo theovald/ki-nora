@@ -35,6 +35,10 @@ def test_index_html_content():
     topic_cards = soup.find_all("div", class_="topic-card")
     assert len(topic_cards) >= 4
 
+    # Check we have the advisory/dev section cards
+    verv_items = soup.find_all("div", class_="verv-item")
+    assert len(verv_items) >= 2
+
     # Check for extra image
     vestland_img = soup.find("img", src="vestland26.png")
     assert vestland_img is not None
