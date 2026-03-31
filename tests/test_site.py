@@ -35,10 +35,9 @@ def test_index_html_content():
     topic_cards = soup.find_all("div", class_="topic-card")
     assert len(topic_cards) >= 4
 
-    # Check for contact form
-    form = soup.find("form", id="booking-form")
-    assert form is not None
-    assert form["action"] == "mailto:nora@kantega.no"
+    # Check for extra image
+    vestland_img = soup.find("img", src="vestland26.png")
+    assert vestland_img is not None
 
     # Check CSS and JS links
     css_link = soup.find("link", href="style.css")
