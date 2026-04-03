@@ -43,6 +43,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Hamburger menu logic
+    const hamburgerBtn = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-cta-link');
+
+    if (hamburgerBtn && navMenu) {
+        // Toggle menu when clicking hamburger
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    hamburgerBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    }
+
     // Handle form submission asynchronously
     const bookingForm = document.getElementById('booking-form');
     // Handle Path Buttons Toggle
