@@ -354,40 +354,29 @@ p {
 
 .topic-card {
     background: var(--card-bg-gradient);
-    padding: 1.5rem;
-    border-radius: 0; /* Kantega strict box */
+    padding: 0; /* Remove padding here, move to content wrapper */
+    border-radius: 0.5rem; /* Let's add slight rounding to the whole card so the gradient fits nicely */
     border: 1px solid var(--border-color);
     transition: transform 0.2s, border-color 0.2s;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Important so gradient doesn't spill out of border radius */
+    text-decoration: none; /* Add this to remove link underline from the whole card */
+    cursor: pointer;
 }
 
-/* Lysere gradienter for foredragskortene så illustrasjonene popper */
+/* Lysere gradienter på hele kortet med Kantega to-farger-kombinasjoner. Blander inn en base av hvit for å overskrive mørk bakgrunn og la kortene være identiske uansett lys eller mørk modus. */
 .topic-card:nth-child(1) {
-    background: linear-gradient(135deg, rgba(238, 58, 100, 0.15) 0%, rgba(2, 142, 167, 0.05) 100%);
+    background: linear-gradient(145deg, rgba(238, 58, 100, 0.15) 0%, rgba(2, 142, 167, 0.2) 100%) var(--k-white); /* Rød -> Teal */
 }
 .topic-card:nth-child(2) {
-    background: linear-gradient(135deg, rgba(2, 142, 167, 0.15) 0%, rgba(244, 151, 39, 0.05) 100%);
+    background: linear-gradient(145deg, rgba(238, 58, 100, 0.15) 0%, rgba(244, 151, 39, 0.2) 100%) var(--k-white); /* Rød -> Gul */
 }
 .topic-card:nth-child(3) {
-    background: linear-gradient(135deg, rgba(244, 151, 39, 0.15) 0%, rgba(238, 58, 100, 0.05) 100%);
+    background: linear-gradient(145deg, rgba(238, 58, 100, 0.15) 0%, rgba(39, 0, 61, 0.2) 100%) var(--k-white); /* Rød -> Dyp Lilla */
 }
 .topic-card:nth-child(4) {
-    background: linear-gradient(135deg, rgba(39, 0, 61, 0.1) 0%, rgba(238, 58, 100, 0.08) 100%);
-}
-
-/* Tilsvarende tilpasninger i dark-mode for å beholde lysstyrke, men blande inn riktig tone */
-body.dark-theme .topic-card:nth-child(1) {
-    background: linear-gradient(135deg, rgba(238, 58, 100, 0.25) 0%, rgba(2, 142, 167, 0.1) 100%);
-}
-body.dark-theme .topic-card:nth-child(2) {
-    background: linear-gradient(135deg, rgba(2, 142, 167, 0.25) 0%, rgba(244, 151, 39, 0.1) 100%);
-}
-body.dark-theme .topic-card:nth-child(3) {
-    background: linear-gradient(135deg, rgba(244, 151, 39, 0.25) 0%, rgba(238, 58, 100, 0.1) 100%);
-}
-body.dark-theme .topic-card:nth-child(4) {
-    background: linear-gradient(135deg, rgba(54, 1, 91, 0.4) 0%, rgba(238, 58, 100, 0.15) 100%);
+    background: linear-gradient(145deg, rgba(39, 0, 61, 0.2) 0%, rgba(2, 142, 167, 0.2) 100%) var(--k-white); /* Dyp Lilla -> Teal */
 }
 
 .topic-card:hover {
@@ -397,18 +386,48 @@ body.dark-theme .topic-card:nth-child(4) {
 
 .topic-icon {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.topic-content {
+    padding: 0 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .topic-card h3 {
     font-size: 1.15rem;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: var(--k-dark-purple);
 }
 
 .topic-card p {
     font-size: 0.95rem;
     flex-grow: 1;
+    color: var(--k-dark-purple);
+    opacity: 0.9;
+}
+
+.topic-btn {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background: transparent;
+    color: var(--k-dark-purple);
+    font-weight: 700;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.2s, color 0.2s;
+    margin-top: 1.5rem;
+}
+
+.topic-card:hover .topic-btn {
+    background: var(--primary-color);
+    color: var(--k-white);
 }
 
 .topic-example {
