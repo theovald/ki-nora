@@ -21,6 +21,7 @@
     --card-bg: #ffffff;
     --tag-bg: var(--k-gray-light);
     --tag-text: var(--k-dark-purple);
+    --card-bg-gradient: linear-gradient(to bottom right, var(--k-white), rgba(2, 142, 167, 0.05));
 }
 
 body.dark-theme {
@@ -34,6 +35,7 @@ body.dark-theme {
     --card-bg: #1e002e;
     --tag-bg: var(--k-dark-purple-light);
     --tag-text: var(--k-white);
+    --card-bg-gradient: linear-gradient(to bottom right, #1e002e, rgba(2, 142, 167, 0.15));
 }
 
 * {
@@ -56,28 +58,93 @@ body {
     padding: 2rem;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s;
 }
 
-.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+body.dark-theme .navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+
+.nav-gradient {
+    height: 4px;
     width: 100%;
-    align-items: center;
-    padding-right: 2rem;
+    /* Kantega Varm gradient */
+    background: linear-gradient(to right, var(--k-red), var(--k-teal));
 }
 
-.header-logo-wrapper {
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-brand {
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+.nav-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-cta-link {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.4rem 1rem;
+    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.nav-cta-link:hover {
+    background-color: var(--primary-color);
+    color: var(--k-white);
 }
 
 .header-kantega-logo {
@@ -113,27 +180,7 @@ body:not(.dark-theme) .header-kantega-logo {
     color: var(--text-muted);
 }
 
-h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-    line-height: 1.2;
-}
 
-.subtitle {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    margin-bottom: 0.75rem;
-    font-weight: 400;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
 
 a {
     color: var(--text-color);
@@ -162,6 +209,7 @@ a:hover {
 /* Typography & Sections */
 .section {
     margin-bottom: 3.5rem;
+    scroll-margin-top: 100px;
 }
 
 .hero-split {
@@ -242,6 +290,30 @@ body.dark-theme .cta-button:hover {
     background-color: var(--primary-hover);
 }
 
+/* Secondary Button */
+.secondary-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+}
+
+body.dark-theme .secondary-btn {
+    color: var(--k-white);
+    border-color: var(--k-white);
+}
+
+body.dark-theme .secondary-btn:hover {
+    background-color: var(--k-white);
+    color: var(--k-dark-purple);
+}
+
+
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -281,7 +353,7 @@ p {
 }
 
 .topic-card {
-    background-color: var(--card-bg);
+    background: var(--card-bg-gradient);
     padding: 1.5rem;
     border-radius: 0; /* Kantega strict box */
     border: 1px solid var(--border-color);
@@ -405,7 +477,7 @@ p {
 
 /* Form Styles */
 .contact-form {
-    background-color: var(--card-bg);
+    background: var(--card-bg-gradient);
     padding: 2rem;
     border: 1px solid var(--border-color);
     margin-top: 1.5rem;
@@ -503,7 +575,7 @@ body:not(.dark-theme) .kantega-logo {
 }
 
 .verv-item {
-    background-color: var(--card-bg);
+    background: var(--card-bg-gradient);
     padding: 1.5rem;
     border-radius: 0.5rem;
     border: 1px solid var(--border-color);
@@ -562,14 +634,15 @@ body:not(.dark-theme) .kantega-logo {
 }
 
 @media (max-width: 600px) {
-    .header-content {
+    .nav-container {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
+        align-items: center;
+        gap: 0.5rem;
     }
-
-    .header-logo-wrapper {
-        margin-top: 0.5rem;
+    
+    .nav-menu {
+        justify-content: center;
+        gap: 1rem;
     }
 
     .experience-header, .education-header {
@@ -590,7 +663,7 @@ body:not(.dark-theme) .kantega-logo {
     gap: 0.5rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
-    background-color: var(--card-bg);
+    background: var(--card-bg-gradient);
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: 1px solid var(--border-color);
@@ -628,4 +701,59 @@ body.dark-theme .path-btn.active {
 
 .form-group.hidden {
     display: none;
+}
+
+
+
+/* Subtle ambient background gradient to simulate Kantega's "Flytsonen" */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at top right, rgba(238, 58, 100, 0.07), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(2, 142, 167, 0.07), transparent 40%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+body:not(.dark-theme)::before {
+    background: radial-gradient(circle at top right, rgba(238, 58, 100, 0.04), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(2, 142, 167, 0.04), transparent 40%);
+}
+
+.hero-split {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, rgba(2, 142, 167, 0.05) 0%, transparent 50%);
+    border-radius: 0.5rem;
+}
+
+.leveregler-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.2s;
+    position: relative;
+    display: inline-block;
+}
+
+.leveregler-link:hover {
+    color: var(--primary-color);
+}
+
+.leveregler-link::after {
+    content: '→';
+    position: absolute;
+    right: -1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: opacity 0.2s, right 0.2s;
+}
+
+.leveregler-link:hover::after {
+    opacity: 1;
+    right: -1.5rem;
 }

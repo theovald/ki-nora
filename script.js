@@ -66,19 +66,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Update hidden input
                 const selectedPath = this.getAttribute('data-path');
-                
+
                 if (selectedPath === 'foredrag') {
                     inquiryType.value = 'Foredrag';
-                    
+
                     // Show Foredrag specific fields
                     subjectGroup.style.display = 'block';
                     subjectInput.required = true;
+                    // Tøm feltet dersom det inneholder den generiske rådgivnings-tittelen
+                    if (subjectInput.value === 'Strategisk rådgivning' || subjectInput.value === 'KI-utvikling og prosjekt') {
+                        subjectInput.value = '';
+                    }
                     dateGroup.style.display = 'block';
-                    
+
                     // Update labels
                     bodyLabel.textContent = 'Litt om arrangementet og målgruppen (valgfritt)';
                     bodyTextarea.placeholder = 'Skriv din melding her...';
-                    
+
                 } else if (selectedPath === 'radgivning') {
                     inquiryType.value = 'Strategisk rådgivning';
                     

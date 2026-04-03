@@ -11,46 +11,39 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
 </head>
 <body class="dark-theme">
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <div>
-                    <h1>Nora Gjøen-Gjøsæter</h1>
-                    <p class="subtitle">Foredragsholder & leder for kunstig intelligens</p>
-                    <div class="contact-info">
-                        <a href="#foredrag">Mine foredrag</a>
-                        <span>•</span>
-                        <a href="#radgivning">Rådgivning og utvikling</a>
-                        <span>•</span>
-                        <a href="#booking" style="font-weight: 700; color: var(--primary-color);">Kontakt</a>
-                        <span>•</span>
-                        <a href="https://www.linkedin.com/in/ki-nora" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </div>
-                </div>
-                <div class="header-logo-wrapper">
-                    <a href="https://www.kantega.no" target="_blank" rel="noopener noreferrer">
-                        <img src="images/Kantega_logo_hvit.svg" alt="Kantega logo" class="header-kantega-logo">
-                    </a>
-                </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" style="width: 100%; justify-content: space-between;">
+                <a href="#foredrag" class="nav-link">Foredrag</a>
+                <a href="#radgivning" class="nav-link">Rådgivning & KI-tjenester</a>
+                <a href="https://www.linkedin.com/in/ki-nora" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
+                <a href="#booking" class="nav-cta-link">Kontakt</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <a href="https://www.kantega.no" target="_blank" rel="noopener noreferrer" class="nav-logo" style="margin-left: 0.5rem; display: flex; align-items: center;">
+                    <img src="images/Kantega_logo_hvit.svg" alt="Kantega logo" class="header-kantega-logo" style="height: 30px;">
+                </a>
             </div>
-            <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode">
-                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-            </button>
-        </header>
+        </div>
+        <div class="nav-gradient"></div>
+    </nav>
 
+    <div class="container" style="padding-top: 2rem;">
         <main>
             <section class="hero-split">
                 <div class="hero-text">
-                    <h2 class="hero-title">Teknologi.<br>Forretning.<br>Mennesker.</h2>
+
+                    <h1 class="hero-title">Nora Gjøen&#8209;Gjøsæter</h1>
                     <p class="lead-text">
                         Foredragsholder, avdelingsleder og strategisk KI-rådgiver med superkrefter fra <a href="https://www.kantega.no" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: 600; text-decoration: underline;"> Kantega</a>.
                     </p>
                     <p class="sub-lead-text">
                         En engasjerende formidler med strategisk blikk, faglig tyngde og operativ erfaring.
                     </p>
-                    <div class="hero-actions" style="margin-top: 2.5rem;">
-                        <a href="#booking" class="cta-button">Forespørsel om foredrag</a>
+                    <div class="hero-actions" style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'foredrag\']').click()" class="cta-button">Forespørsel om foredrag</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -63,36 +56,40 @@
                 <p>Jeg skreddersyr alltid foredragene for publikum – enten dere er en toppledergruppe, på en teknisk utviklerkonferanse eller en bedriftssamling. Her er noen av mine mest etterspurte temaer. Jeg utformer også gjerne <strong>tilpassede tema</strong> etter deres spesifikke behov.</p>
 
                 <div class="grid-3">
-                    <div class="topic-card">
+                    <div class="topic-card" style="display: flex; flex-direction: column;">
                         <div class="topic-icon" style="margin-bottom: 1.5rem;">
                             <img src="images/Situasjoner/svg-er/AI.svg" alt="Kunstig intelligens" style="height: 50px; width: auto; object-fit: contain;">
                         </div>
                         <h3>Kunstig intelligens i praksis</h3>
-                        <p>Hvordan drar du nytte av egne data med KI? Forbi hypen: Få praktisk implementering, generativ KI og en dataplattform som fundament. Teknologi og forretning må spille sammen for å skape verdi.</p>
+                        <p style="margin-bottom: 1.5rem;">Hvordan drar du nytte av egne data med KI? Forbi hypen: Få praktisk implementering, generativ KI og en dataplattform som fundament. Teknologi og forretning må spille sammen for å skape verdi.</p>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'foredrag\']').click(); document.getElementById('subject').value = 'Kunstig intelligens i praksis';" class="cta-button secondary-btn" style="text-align: center; margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Forespør dette</a>
                     </div>
 
-                    <div class="topic-card">
+                    <div class="topic-card" style="display: flex; flex-direction: column;">
                         <div class="topic-icon" style="margin-bottom: 1.5rem;">
                             <img src="images/Situasjoner/svg-er/Sikkerhet.svg" alt="Sikkerhet og etikk" style="height: 50px; width: auto; object-fit: contain;">
                         </div>
                         <h3>Etikk, bias og ansvarlig KI</h3>
-                        <p>"Brilliant but Biased". Hvilket ansvar har vi når vi bygger og bruker KI-systemer? Lær om store språkmodeller, implisitt bias, hallusinering og hvorfor tverrfaglighet er den beste medisinen mot algoritmisk slagside.</p>
+                        <p style="margin-bottom: 1.5rem;">"Brilliant but Biased". Hvilket ansvar har vi når vi bygger og bruker KI-systemer? Lær om store språkmodeller, implisitt bias, hallusinering og hvorfor tverrfaglighet er den beste medisinen mot algoritmisk slagside.</p>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'foredrag\']').click(); document.getElementById('subject').value = 'Etikk, bias og ansvarlig KI';" class="cta-button secondary-btn" style="text-align: center; margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Forespør dette</a>
                     </div>
 
-                    <div class="topic-card">
+                    <div class="topic-card" style="display: flex; flex-direction: column;">
                         <div class="topic-icon" style="margin-bottom: 1.5rem;">
                             <img src="images/Situasjoner/svg-er/Endringsledelse.svg" alt="Prestasjon og ledelse" style="height: 50px; width: auto; object-fit: contain;">
                         </div>
                         <h3>Prestasjon og ledelse</h3>
-                        <p>"Fra garderobeprat til git commit". Jeg deler lærdommer fra karrieren som landslagskeeper i fotball, og overfører dem til moderne tech-team. Lær om disiplin, autonomi, hvordan vi bygger psykologisk trygghet og leverer under press.</p>
+                        <p style="margin-bottom: 1.5rem;">"Fra garderobeprat til git commit". Jeg deler lærdommer fra karrieren som landslagskeeper i fotball, og overfører dem til moderne tech-team. Lær om disiplin, autonomi, hvordan vi bygger psykologisk trygghet og leverer under press.</p>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'foredrag\']').click(); document.getElementById('subject').value = 'Prestasjon og ledelse';" class="cta-button secondary-btn" style="text-align: center; margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Forespør dette</a>
                     </div>
 
-                    <div class="topic-card">
+                    <div class="topic-card" style="display: flex; flex-direction: column;">
                         <div class="topic-icon" style="margin-bottom: 1.5rem;">
                             <img src="images/Situasjoner/svg-er/Rakett.svg" alt="Innovasjon" style="height: 50px; width: auto; object-fit: contain;">
                         </div>
-                        <h3>Fra pilot til produksjon</h3>
-                        <p>Hvorfor stopper så mange maskinlæringsprosjekter i pilotfasen? Hør hvorfor god dataarkitektur, Machine Learning Operations (MLOps) og tverrfaglige team er viktig for å bygge robuste KI-systemer. Slik skaper vi varig verdi i produksjon.</p>
+                        <h3>Skreddersydde foredrag</h3>
+                        <p style="margin-bottom: 1.5rem;">Hver virksomhet står overfor unike utfordringer. Jeg skreddersyr gjerne innhold rundt endringsledelse, KI-strategi eller spesifikke teknologiske veivalg. Målet er alltid å bygge bro mellom strategi, teknologi og menneskene som skal gjøre jobben.</p>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'foredrag\']').click(); document.getElementById('subject').value = 'Skreddersydd foredrag';" class="cta-button secondary-btn" style="text-align: center; margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Forespør dette</a>
                     </div>
                 </div>
             </section>
@@ -160,24 +157,26 @@
                 <p>I tillegg til foredrag og keynotes tilbyr jeg og <strong>KI-avdelingen i Bergen</strong> konsulenttjenester. Vi hjelper virksomheter på Vestlandet med å utvikle og utnytte KI.</p>
 
                 <div class="grid-2" style="margin-top: 2rem;">
-                    <div class="verv-item" style="border-top: 4px solid var(--primary-color);">
+                    <div class="verv-item" style="border-top: 4px solid var(--primary-color); display: flex; flex-direction: column;">
                         <h3>Strategisk rådgivning & kurs</h3>
                         <p style="margin-top: 0.5rem; margin-bottom: 1rem;">Vi hjelper ledergrupper, styrer og beslutningstakere med å forstå landskapet og stake ut riktig kurs.</p>
-                        <ul class="skills-list" style="font-size: 0.95rem;">
+                        <ul class="skills-list" style="font-size: 0.95rem; margin-bottom: 2rem; flex-grow: 1;">
                             <li><strong>KI-mulighetsstudie:</strong> Vi kartlegger og prioriterer KI-brukstilfeller (use cases) med reell forretningsverdi. Vi vurderer også verdi, kostnader og risiko.</li>
                             <li><strong>KI-kurs for ledere:</strong> Vi gir skreddersydd opplæring. Forstå hvordan virksomheten utnytter KI og egne data for å skape bedre tjenester.</li>
                             <li><strong>KI-strategi og datastrategi:</strong> Lær hvordan dere utnytter data og KI for å møte fremtidens krav.</li>
                         </ul>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'radgivning\']').click()" class="cta-button secondary-btn" style="text-align: center; margin-top: auto;">Forespørsel om rådgivning</a>
                     </div>
 
-                    <div class="verv-item" style="border-top: 4px solid var(--primary-color);">
+                    <div class="verv-item" style="border-top: 4px solid var(--primary-color); display: flex; flex-direction: column;">
                         <h3>Operativ KI-utvikling</h3>
                         <p style="margin-top: 0.5rem; margin-bottom: 1rem;">KI-avdelingen i Bergen bygger skreddersydde løsninger som vi setter i produksjon.</p>
-                        <ul class="skills-list" style="font-size: 0.95rem;">
+                        <ul class="skills-list" style="font-size: 0.95rem; margin-bottom: 2rem; flex-grow: 1;">
                             <li><strong>Fra pilot til prosjekt:</strong> Vi utvikler KI-prototyper til fullverdige og robuste produksjonsløsninger. Dette inkluderer prateroboter (chatbots) basert på egne data via Retrieval-Augmented Generation (RAG).</li>
                             <li><strong>Anvendt & ansvarlig KI:</strong> Vi bygger løsninger med innebygd personvern, sikkerhet og sporbarhet.</li>
                             <li><strong>Arkitektur & MLOps:</strong> Vi setter opp infrastruktur, dataflyt og plattformer. Slik sikrer vi at modellene skaper verdi over tid.</li>
                         </ul>
+                        <a href="#booking" onclick="document.querySelector('[data-path=\'utvikling\']').click()" class="cta-button secondary-btn" style="text-align: center; margin-top: auto;">Forespørsel om KI-utvikling</a>
                     </div>
                 </div>
                 <p> </p>
@@ -196,7 +195,7 @@
             <section class="section about-speaker">
                 <h2>Om meg</h2>
                 <div class="about-content">
-                    <p>I tillegg til å stå på scenen, jobber jeg med operativ KI-utvikling. Som tidligere eliteseriespiller og landslagskeeper tar jeg med meg en vinnerkultur preget av høyt tempo, lagånd og presisjon. Denne kulturen tar jeg direkte inn på tech-scenen og i ledelsesrommene. Jeg er uredd, engasjert og ærlig når jeg formidler.</p>
+                    <p>I tillegg til å stå på scenen, jobber jeg med strategisk rådgivning og operativ KI-utvikling. Som tidligere eliteseriespiller og landslagskeeper tar jeg med meg en vinnerkultur preget av høyt tempo, lagånd og presisjon. Denne kulturen tar jeg direkte inn på tech-scenen og i ledelsesrommene. Jeg er opptatt av at teknologiskiftet også handler om endringsledelse, og jeg er uredd, engasjert og ærlig når jeg formidler.</p>
                     <ul class="background-list" style="margin-top: 1.5rem;">
                         <li>
                             <strong>Leder for KI i Bergen:</strong> Jeg har totalansvar for KI-avdelingen til Kantega i Bergen. Jeg gir råd til kunder på et strategisk nivå og utvikler fagmiljøet vårt internt. Kantega er et 100 % ansatteid IT-konsulentselskap som bygger samfunnskritisk infrastruktur.
@@ -258,8 +257,8 @@
                     <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 4px; font-weight: 600;"></div>
                 </form>
             </section>
-                        <div class="leveregler-section" style="margin-top: 3rem; background-color: var(--card-bg); padding: 2rem; border-radius: 4px; border: 1px solid var(--border-color);">
-                    <h3 style="text-align: center; margin-bottom: 1.5rem;">Kantegas leveregler</h3>
+                        <div class="leveregler-section" style="margin-top: 3rem; background: var(--card-bg-gradient); padding: 2rem; border-radius: 4px; border: 1px solid var(--border-color);">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem;"><a href="https://www.kantega.no/" target="_blank" rel="noopener noreferrer" class="leveregler-link">Kantegas leveregler</a></h3>
                     <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 1.5rem; text-align: center;">
                         <div style="flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center;">
                             <img src="images/svg-er av levereglene/Skap verdi.svg" alt="Skap verdi" style="height: 60px; margin-bottom: 0.5rem; ">
