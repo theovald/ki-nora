@@ -11,3 +11,4 @@ __pycache__/
 
 # Claude memory / config
 .claude/
+CLAUDE.md

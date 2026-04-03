@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Show Foredrag specific fields
                     subjectGroup.style.display = 'block';
-                    subjectInput.required = true;
+                    subjectInput.required = false;
                     // Tøm feltet dersom det inneholder den generiske rådgivnings-tittelen
                     if (subjectInput.value === 'Strategisk rådgivning' || subjectInput.value === 'KI-utvikling og prosjekt') {
                         subjectInput.value = '';
