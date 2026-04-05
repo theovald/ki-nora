@@ -16,7 +16,7 @@ def test_index_html_content():
     # Check main header
     h1 = soup.find("h1")
     assert h1 is not None
-    assert "Nora Gjøen-Gjøsæter" in h1.text
+    assert "Nora Gjøen\u2011Gjøsæter" in h1.text
 
     # Check for dark theme default
     body = soup.find("body")
@@ -32,7 +32,7 @@ def test_index_html_content():
     assert img["src"] == "images/speaker.jpeg"
 
     # Check we have 4 topic cards
-    topic_cards = soup.find_all("div", class_="topic-card")
+    topic_cards = soup.find_all(class_="topic-card")
     assert len(topic_cards) >= 4
 
     # Check we have the advisory/dev section cards
