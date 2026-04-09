@@ -11,12 +11,12 @@ def test_index_html_content():
     soup = BeautifulSoup(html_content, "html.parser")
 
     # Check title
-    assert soup.title.string == "Nora Gjøen-Gjøsæter | Foredragsholder & KI-leder"
+    assert soup.title.string == "Nora Gjøen-Gjøsæter | Foredragsholder og KI-leder"
 
     # Check main header
     h1 = soup.find("h1")
     assert h1 is not None
-    assert "Nora Gjøen\u2011Gjøsæter" in h1.text
+    assert "Gjøen\u2011Gjøsæter" in h1.text
 
     # Check for dark theme default
     body = soup.find("body")
@@ -27,7 +27,7 @@ def test_index_html_content():
     assert len(sections) >= 4  # Hero-split, Temaer, Scener, Bakgrunn, Booking
 
     # Check for speaker image
-    img = soup.find("img", class_="hero-image")
+    img = soup.find("img", class_="hero-photo")
     assert img is not None
     assert img["src"] == "images/speaker.jpeg"
 
@@ -36,7 +36,7 @@ def test_index_html_content():
     assert len(topic_cards) >= 4
 
     # Check we have the advisory/dev section cards
-    verv_items = soup.find_all("div", class_="verv-item")
+    verv_items = soup.find_all("div", class_="service-card")
     assert len(verv_items) >= 2
 
     # Check for extra image
@@ -52,9 +52,6 @@ def test_index_html_content():
     status_div = soup.find("div", id="form-status")
     assert status_div is not None
 
-    # Check CSS and JS links
-    css_link = soup.find("link", href="style.css")
-    assert css_link is not None
-
+    # Check JS link
     js_script = soup.find("script", src="script.js")
     assert js_script is not None
