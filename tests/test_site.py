@@ -31,9 +31,9 @@ def test_index_html_content():
     assert img is not None
     assert img["src"] == "images/speaker.jpeg"
 
-    # Check we have 4 topic cards
+    # Check we have the topic cards
     topic_cards = soup.find_all(class_="topic-card")
-    assert len(topic_cards) >= 4
+    assert len(topic_cards) >= 3
 
     # Check we have the advisory/dev section cards
     verv_items = soup.find_all("div", class_="service-card")
@@ -43,14 +43,11 @@ def test_index_html_content():
     vestland_img = soup.find("img", src="images/vestland26.png")
     assert vestland_img is not None
 
-    # Check for formspree contact form
-    form = soup.find("form", id="booking-form")
-    assert form is not None
-    assert "formspree.io" in form.get("action", "")
-
-    # Check for form status div (used for async submission feedback)
-    status_div = soup.find("div", id="form-status")
-    assert status_div is not None
+    # Check the contact section links directly to email (no form)
+    assert soup.find("form") is None
+    contact = soup.find("section", id="kontakt")
+    assert contact is not None
+    assert contact.find("a", href="mailto:nora@kantega.no") is not None
 
     # Check JS link
     js_script = soup.find("script", src="script.js")

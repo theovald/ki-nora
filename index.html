@@ -19,11 +19,9 @@
       /* === KANTEGA TOKENS === */
       :root {
         --k-dark-purple: #27003d;
-        --k-dark-purple-light: #36015b;
         --k-red: #ee3a64;
         --k-red-dark: #d3335e;
         --k-teal: #028ea7;
-        --k-yellow: #f49727;
         --k-white: #fff8fc;
         --k-gray-mid: #4e575b;
 
@@ -36,7 +34,6 @@
         --accent: var(--k-red);
         --accent-hover: var(--k-red-dark);
         --border: rgba(39, 0, 61, 0.12);
-        --input-bg: #ffffff;
       }
 
       body.dark-theme {
@@ -48,7 +45,6 @@
         --accent: var(--k-red);
         --accent-hover: #ff4f7a;
         --border: rgba(255, 248, 252, 0.08);
-        --input-bg: #180028;
       }
 
       * {
@@ -298,19 +294,13 @@
         font-size: 1.15rem;
         font-weight: 600;
         color: var(--text);
-        margin-bottom: 0.75rem;
+        margin-bottom: 2.5rem;
         line-height: 1.5;
       }
 
       .hero-lead a {
         color: var(--accent);
         text-decoration: underline;
-      }
-
-      .hero-sub {
-        font-size: 1rem;
-        color: var(--text-muted);
-        margin-bottom: 2.5rem;
       }
 
       .cta-button {
@@ -416,147 +406,6 @@
         margin: 0;
       }
 
-      .topic-cta {
-        font-size: 0.85rem;
-        font-weight: 700;
-        color: var(--accent);
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        margin-top: auto;
-      }
-
-      .topic-cta::after {
-        content: '→';
-      }
-
-      /* === CUSTOM TOPIC (skreddersydd) === */
-      .custom-topic-card {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        padding: 1.75rem 2rem;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-top: none;
-        text-decoration: none;
-        transition: background 0.2s;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .custom-topic-card::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: var(--accent);
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: transform 0.3s;
-      }
-
-      .custom-topic-card:hover::before {
-        transform: scaleY(1);
-      }
-      .custom-topic-card:hover {
-        background: var(--bg-card2);
-      }
-
-      .custom-topic-body {
-        flex: 1;
-      }
-      .custom-topic-body h3 {
-        font-size: 1rem;
-        color: var(--text);
-        margin: 0 0 0.3rem;
-      }
-      .custom-topic-body p {
-        font-size: 0.9rem;
-        color: var(--text-muted);
-        margin: 0;
-      }
-
-      .custom-topic-card .topic-icon img {
-        height: 44px;
-      }
-      .custom-topic-card .topic-cta {
-        margin-top: 0;
-        white-space: nowrap;
-      }
-
-      @media (max-width: 600px) {
-        .custom-topic-card {
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
-        .custom-topic-card .topic-cta {
-          width: 100%;
-        }
-      }
-
-      /* === STAGE TIMELINE === */
-      .timeline {
-        position: relative;
-        margin-top: 2.5rem;
-        padding-left: 2rem;
-      }
-
-      .timeline::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        bottom: 0;
-        width: 2px;
-        background: linear-gradient(to bottom, var(--accent), var(--k-teal));
-      }
-
-      .timeline-item {
-        position: relative;
-        padding-bottom: 2rem;
-        padding-left: 1.5rem;
-      }
-
-      .timeline-item::before {
-        content: '';
-        position: absolute;
-        left: -2.375rem;
-        top: 8px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--accent);
-        border: 2px solid var(--bg);
-      }
-
-      .timeline-item:last-child {
-        padding-bottom: 0;
-      }
-
-      .timeline-year {
-        font-size: 0.75rem;
-        font-weight: 700;
-        color: var(--accent);
-        letter-spacing: 0.08em;
-        margin-bottom: 0.2rem;
-      }
-
-      .timeline-item h4 {
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--text);
-        margin-bottom: 0.15rem;
-      }
-
-      .timeline-item p {
-        font-size: 0.9rem;
-        color: var(--text-muted);
-        margin: 0;
-      }
-
       /* === SERVICES === */
       .services-grid {
         display: grid;
@@ -592,8 +441,6 @@
 
       .service-list {
         list-style: none;
-        flex-grow: 1;
-        margin-bottom: 2rem;
       }
 
       .service-list li {
@@ -608,27 +455,6 @@
       }
       .service-list strong {
         color: var(--text);
-      }
-
-      .secondary-btn {
-        display: inline-block;
-        border: 1.5px solid var(--text-muted);
-        color: var(--text);
-        padding: 0.7rem 1.5rem;
-        font-weight: 700;
-        font-size: 0.9rem;
-        text-align: center;
-        transition:
-          background 0.2s,
-          color 0.2s,
-          border-color 0.2s;
-        text-decoration: none;
-      }
-
-      .secondary-btn:hover {
-        background: var(--text);
-        color: var(--bg);
-        border-color: var(--text);
       }
 
       /* === VIDEO === */
@@ -652,8 +478,8 @@
       /* === ABOUT === */
       .about-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        grid-template-columns: 1.6fr 1fr;
+        gap: 3rem;
         align-items: start;
         margin-top: 2rem;
       }
@@ -679,10 +505,12 @@
 
       .about-photo {
         width: 100%;
+        max-width: 260px;
         display: block;
         aspect-ratio: 3/4;
         object-fit: cover;
         object-position: center bottom;
+        margin-left: auto;
       }
 
       .photo-caption {
@@ -693,162 +521,22 @@
         text-align: center;
       }
 
-      /* === FORM === */
-      .booking-inner {
-        display: grid;
-        grid-template-columns: 1fr 1.4fr;
-        gap: 4rem;
-        align-items: start;
-        margin-top: 2rem;
-      }
-
-      .booking-intro h3 {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-      }
-
-      .booking-intro p {
-        font-size: 0.95rem;
-        margin-bottom: 0;
-      }
-
-      .booking-intro a {
-        color: var(--accent);
-        text-decoration: underline;
-      }
-
-      .form-path-selector {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-bottom: 2rem;
-      }
-
-      .path-btn {
-        background: none;
-        border: 1px solid var(--border);
-        color: var(--text-muted);
-        padding: 0.7rem 1rem;
-        font-family: inherit;
-        font-size: 0.9rem;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-        transition:
-          border-color 0.2s,
-          color 0.2s,
-          background 0.2s;
-      }
-
-      .path-btn:hover {
-        border-color: var(--accent);
-        color: var(--text);
-      }
-      .path-btn.active {
-        border-color: var(--accent);
-        background: rgba(238, 58, 100, 0.08);
-        color: var(--text);
-      }
-
-      .contact-form {
-      }
-
-      .form-group {
-        margin-bottom: 1.5rem;
-      }
-
-      .form-group label {
-        display: block;
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-        margin-bottom: 0.5rem;
-      }
-
-      .form-group input,
-      .form-group textarea {
-        width: 100%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid var(--border);
-        color: var(--text);
-        font-family: inherit;
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        outline: none;
-        transition: border-color 0.2s;
-      }
-
-      .form-group input:focus,
-      .form-group textarea:focus {
-        border-bottom-color: var(--accent);
-      }
-
-      .form-group textarea {
-        resize: vertical;
-        min-height: 100px;
-      }
-
-      .form-note {
-        font-size: 0.8rem;
-        color: var(--text-muted);
-        font-style: italic;
-        margin-top: 0.5rem;
-      }
-
-      .form-group.hidden {
-        display: none;
-      }
-
-      /* === LEVEREGLER === */
-      .leveregler-section {
+      /* === CONTACT === */
+      .contact-section {
         text-align: center;
-        padding: 4rem 0;
       }
 
-      .leveregler-section h3 {
-        font-size: 0.75rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--text-muted);
-        margin-bottom: 2.5rem;
+      .contact-section p {
+        max-width: 480px;
+        margin: 0 auto 2rem;
+        font-size: 1.05rem;
       }
 
-      .leveregler-section h3 a {
-        color: inherit;
-        text-decoration: underline;
-      }
-      .leveregler-section h3 a:hover {
-        color: var(--accent);
-      }
-
-      .leveregler-grid {
+      .contact-actions {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 3rem;
-      }
-
-      .leveregler-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      .leveregler-item img {
-        height: 52px;
-        filter: drop-shadow(0 0 12px rgba(238, 58, 100, 0.2));
-      }
-
-      .leveregler-item span {
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: var(--text-muted);
+        gap: 1rem;
+        flex-wrap: wrap;
       }
 
       /* === FOOTER === */
@@ -886,10 +574,6 @@
           grid-template-columns: 1fr;
         }
         .about-grid {
-          grid-template-columns: 1fr;
-          gap: 2rem;
-        }
-        .booking-inner {
           grid-template-columns: 1fr;
           gap: 2rem;
         }
@@ -947,19 +631,6 @@
         .topic-grid {
           grid-template-columns: 1fr;
         }
-
-        .form-path-selector {
-          flex-direction: row;
-          flex-wrap: wrap;
-        }
-        .path-btn {
-          flex: 1;
-          min-width: 140px;
-        }
-
-        .leveregler-grid {
-          gap: 2rem;
-        }
       }
     </style>
   </head>
@@ -978,9 +649,7 @@
         </div>
         <ul class="nav-links" id="nav-menu">
           <li><a href="#foredrag" class="nav-link">Foredrag</a></li>
-          <li>
-            <a href="#radgivning" class="nav-link">Rådgivning og KI-tjenester</a>
-          </li>
+          <li><a href="#radgivning" class="nav-link">Rådgivning</a></li>
           <li>
             <a
               href="https://www.linkedin.com/in/ki-nora"
@@ -990,7 +659,7 @@
               >LinkedIn</a
             >
           </li>
-          <li><a href="#booking" class="nav-cta nav-link">Kontakt</a></li>
+          <li><a href="#kontakt" class="nav-cta nav-link">Kontakt</a></li>
           <li class="nav-actions" id="nav-actions">
             <button
               id="theme-toggle"
@@ -1057,12 +726,11 @@
     <div class="container">
       <section class="hero">
         <div class="hero-text">
-          <p class="section-label">Foredragsholder · KI-leder · Rådgiver</p>
           <h1 class="hero-title">
             Nora<br /><strong>Gjøen&#8209;Gjøsæter</strong>
           </h1>
           <p class="hero-lead">
-            Foredragsholder, KI-leder og strategisk rådgiver fra
+            KI-leder og foredragsholder fra
             <a
               href="https://www.kantega.no"
               target="_blank"
@@ -1070,12 +738,7 @@
               >Kantega</a
             >.
           </p>
-          <a
-            href="#booking"
-            onclick="document.querySelector('[data-path=\'foredrag\']').click()"
-            class="cta-button"
-            >Forespørsel om foredrag</a
-          >
+          <a href="#kontakt" class="cta-button">Ta kontakt</a>
         </div>
         <div class="hero-photo-wrap">
           <img
@@ -1089,20 +752,22 @@
 
     <div class="container">
       <section id="foredrag" class="section">
-        <p class="section-label">Mine foredrag</p>
-        <h2>Temaer jeg brenner for</h2>
-        <p>Foredragene skreddersys alltid for publikum og anledning.</p>
+        <h2>Foredrag</h2>
+        <p>
+          Jeg skreddersyr hvert foredrag etter publikum og anledning. Jeg
+          snakker også om andre tema enn eksemplene under, som prestasjonskultur
+          og ledelse fra livet som landslagskeeper.
+        </p>
+        <p>
+          Jeg har holdt foredrag og debattinnlegg på blant annet
+          <strong style="color: var(--text)"
+            >Vestlandskonferansen, Booster Conference, Arendalsuka, JavaZone og
+            Norway Fintech Festival</strong>. I tillegg holder jeg interne foredrag og ledersamlinger for blant
+          annet DNB, TV 2, Enova, BOB og Bergen Næringsråd.
+        </p>
 
         <div class="topic-grid">
-          <a
-            href="#booking"
-            onclick="
-              document.querySelector('[data-path=\'foredrag\']').click();
-              document.getElementById('subject').value =
-                'Derfor tar ikke KI jobben din';
-            "
-            class="topic-card"
-          >
+          <div class="topic-card">
             <div class="topic-icon">
               <img
                 src="images/Situasjoner/svg-er/å satse-å stole på.svg"
@@ -1111,229 +776,66 @@
             </div>
             <h3>Derfor tar ikke KI jobben din</h3>
             <p>
-              Vi mennesker er fortsatt best på det aller meste som faktisk betyr
-              noe. Om hva du kan slutte med, og hvilke deler av jobben din som
-              blir enda viktigere enn før.
+              Mennesker er fortsatt best på det som betyr mest. Jeg viser hva du
+              kan slutte med, og hva som blir viktigere.
             </p>
-            <span class="topic-cta">Forespør dette</span>
-          </a>
-          <a
-            href="#booking"
-            onclick="
-              document.querySelector('[data-path=\'foredrag\']').click();
-              document.getElementById('subject').value =
-                'Etikk, bias og ansvarlig KI';
-            "
-            class="topic-card"
-          >
+          </div>
+          <div class="topic-card">
             <div class="topic-icon">
-              <img src="images/Situasjoner/svg-er/Sikkerhet.svg" alt="Etikk" />
+              <img src="images/Situasjoner/svg-er/Sikkerhet.svg" alt="Bias" />
             </div>
-            <h3>Etikk, bias og ansvarlig KI</h3>
+            <h3>Anta bias. Alltid</h3>
             <p>
-              Store språkmodeller, implisitt bias, skygge-KI, geopolitikk og
-              etikk. Og hvorfor dette angår absolutt alle.
+              Språkmodeller speiler dataene de er trent på, skjevheter og alt.
+              Derfor er kritisk sans viktigere enn noen gang.
             </p>
-            <span class="topic-cta">Forespør dette</span>
-          </a>
-          <a
-            href="#booking"
-            onclick="
-              document.querySelector('[data-path=\'foredrag\']').click();
-              document.getElementById('subject').value =
-                'KI og forretningsverdi';
-            "
-            class="topic-card"
-          >
-            <div class="topic-icon">
-              <img
-                src="images/Situasjoner/svg-er/Forankret strategi.svg"
-                alt="Strategi"
-              />
-            </div>
-            <h3>KI og forretningsverdi</h3>
-            <p>
-              Organisatoriske forutsetninger, produkt-KI vs hverdags-KI og
-              prioritering i møte med usikkerhet.
-            </p>
-            <span class="topic-cta">Forespør dette</span>
-          </a>
-          <a
-            href="#booking"
-            onclick="
-              document.querySelector('[data-path=\'foredrag\']').click();
-              document.getElementById('subject').value =
-                'Prestasjon og ledelse';
-            "
-            class="topic-card"
-          >
+          </div>
+          <div class="topic-card">
             <div class="topic-icon">
               <img
                 src="images/Situasjoner/svg-er/Teamleder.svg"
-                alt="Ledelse"
+                alt="Ansvar"
               />
             </div>
-            <h3>Prestasjon og ledelse</h3>
+            <h3>Ansvarlig kunstig intelligens er et lederansvar</h3>
             <p>
-              Lærdommer fra karrieren som landslagskeeper. Om disiplin,
-              autonomi, tillit, tabber og takhøyde.
+              KI endrer hvordan vi leder, prioriterer og tar beslutninger i møte
+              med usikkerhet. Ansvarlig bruk er
+              noe ledere må eie selv.
             </p>
-            <span class="topic-cta">Forespør dette</span>
-          </a>
-        </div>
-
-        <a
-          href="#booking"
-          onclick="
-            document.querySelector('[data-path=\'foredrag\']').click();
-            document.getElementById('subject').value = 'Skreddersydd foredrag';
-          "
-          class="custom-topic-card"
-        >
-          <div class="topic-icon">
-            <img
-              src="images/Situasjoner/svg-er/Rakett.svg"
-              alt="Skreddersydd"
-            />
-          </div>
-          <div class="custom-topic-body">
-            <h3>Skreddersydde foredrag</h3>
-            <p>Tilpasset din virksomhet, dine utfordringer og din målgruppe.</p>
-          </div>
-          <span class="topic-cta">Forespør dette</span>
-        </a>
-      </section>
-
-      <section class="section">
-        <p class="section-label">Utvalgte scener</p>
-        <h2>Konferanser og arrangementer</h2>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2026</div>
-            <h4>Vestlandskonferansen 2026</h4>
-            <p>Paneldebatt: Fra folkestyre til plattformstyre</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2026</div>
-            <h4>Booster Conference</h4>
-            <p>Hvordan dra nytte av egne data med KI</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <h4>Arendalsuka</h4>
-            <p>Paneldebatt: Det er egne data som gir deg KI-muskler</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <h4>JavaZone</h4>
-            <p>Fra garderobeprat til git commit</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <h4>Norway Fintech Festival</h4>
-            <p>AI: Brilliant but Biased?</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2025</div>
-            <h4>Oda Network / SheCodes</h4>
-            <p>KI-verktøy for koding – En jungel av muligheter</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2023</div>
-            <h4>JavaZone</h4>
-            <p>Anta bias. Alltid.</p>
           </div>
         </div>
-        <p style="margin-top: 2rem; font-size: 0.85rem">
-          <em
-            >Jeg har også holdt interne foredrag, strategiske workshops og
-            ledersamlinger for blant annet
-            <strong style="color: var(--text)"
-              >DNB, Elmera Group, TV 2, Enova, BOB, Bergen Næringsråd, NTE,
-              Favna og Building Innovation</strong
-            >.</em
-          >
-        </p>
       </section>
 
       <section id="radgivning" class="section">
-        <p class="section-label">Rådgivning og KI-utvikling</p>
         <h2>Tjenester fra KI-avdelingen i Bergen</h2>
-        <p>
-          <strong style="color: var(--text)">KI-avdelingen i Bergen</strong>
-          hjelper virksomheter på Vestlandet med å utvikle og utnytte KI.
-        </p>
+        <p>Vi hjelper virksomheter på Vestlandet med å ta i bruk KI.</p>
 
         <div class="services-grid">
           <div class="service-card">
-            <h3>Strategisk rådgivning og kurs</h3>
-            <p>
-              Vi hjelper ledergrupper, styrer og beslutningstakere med å forstå
-              landskapet og stake ut riktig kurs.
-            </p>
+            <h3>Strategisk rådgivning</h3>
+            <p>For ledergrupper og styrer som skal stake ut kursen.</p>
             <ul class="service-list">
-              <li>
-                <strong>KI-mulighetsstudie:</strong> Kartlegging og prioritering
-                av brukstilfeller med forretningsverdi.
-              </li>
-              <li>
-                <strong>KI-kurs for ledere:</strong> Skreddersydd opplæring i KI
-                og datautnyttelse.
-              </li>
-              <li>
-                <strong>KI-strategi og datastrategi:</strong> Strategisk
-                rådgivning for å møte fremtidens krav.
-              </li>
+              <li><strong>Mulighetsstudier:</strong> Kartlegg og prioriter brukstilfeller med reell verdi.</li>
+              <li><strong>KI-kurs for ledere:</strong> Skreddersydd opplæring i KI og data.</li>
+              <li><strong>KI- og datastrategi:</strong> Rustet for det som kommer.</li>
             </ul>
-            <a
-              href="#booking"
-              onclick="
-                document.querySelector('[data-path=\'radgivning\']').click()
-              "
-              class="secondary-btn"
-              >Forespørsel om rådgivning</a
-            >
           </div>
           <div class="service-card">
             <h3>Operativ KI-utvikling</h3>
-            <p>
-              KI-avdelingen i Bergen bygger skreddersydde løsninger som vi
-              setter i produksjon.
-            </p>
+            <p>Skreddersydde løsninger vi setter i produksjon.</p>
             <ul class="service-list">
-              <li>
-                <strong>Fra pilot til prosjekt:</strong> Prototyper til
-                produksjonsklare løsninger, inkl. RAG-chatbots.
-              </li>
-              <li>
-                <strong>Anvendt og ansvarlig KI:</strong> Innebygd personvern,
-                sikkerhet og sporbarhet.
-              </li>
-              <li>
-                <strong>Arkitektur og MLOps:</strong> Infrastruktur, dataflyt og
-                plattformer.
-              </li>
+              <li><strong>Fra pilot til produksjon:</strong> Prototyper og RAG-chatbots i drift.</li>
+              <li><strong>Ansvarlig KI:</strong> Personvern, sikkerhet og sporbarhet innebygd.</li>
+              <li><strong>Arkitektur og MLOps:</strong> Infrastruktur, dataflyt og plattform.</li>
             </ul>
-            <a
-              href="#booking"
-              onclick="
-                document.querySelector('[data-path=\'utvikling\']').click()
-              "
-              class="secondary-btn"
-              >Forespørsel om KI-utvikling</a
-            >
           </div>
         </div>
       </section>
 
       <section id="utvikling" class="section">
-        <p class="section-label">Anvendt KI i praksis</p>
-        <h2>En smakebit: Pilot for REN</h2>
-        <p>
-          En smakebit av en KI-pilot KI-teamet i Bergen bygget for REN – store
-          språkmodeller brukt med egne data.
-        </p>
+        <h2>Pilot for REN</h2>
+        <p>Store språkmodeller brukt med kundens egne data.</p>
         <div class="video-wrap">
           <video controls>
             <source src="videos/REN.mp4" type="video/mp4" />
@@ -1343,30 +845,30 @@
       </section>
 
       <section class="section about-speaker">
-        <p class="section-label">Om meg</p>
-        <h2>Bakgrunn og erfaring</h2>
+        <h2>Bakgrunn</h2>
         <div class="about-grid">
           <div>
             <p>
-              Jeg kombinerer scenen med strategisk rådgivning og KI-utvikling.
-              Som tidligere eliteseriespiller og landslagskeeper tar jeg med meg
-              vinnerkultur preget av høyt tempo, lagånd og presisjon inn i tech
-              og ledelse.
+              Tidligere landslagskeeper, i dag KI-leder. Jeg tar med meg
+              vinnerkultur, tempo og presisjon inn i tech og ledelse. Jeg er
+              opptatt av å gjøre KI forståelig og nyttig.
+            </p>
+            <p>
+              På scenen kombinerer jeg faglig tyngde med konkrete eksempler fra
+              virkeligheten. Til daglig leder jeg KI-avdelingen i Kantega Bergen.
             </p>
             <ul class="about-list background-list">
               <li>
-                <strong>Leder for KI i Bergen:</strong> Totalansvar for
-                KI-avdelingen til Kantega Bergen – et 100 % ansatteid
-                IT-konsulentselskap.
+                <strong>Leder for KI </strong> i Kantega Bergen - et 100 %
+                ansatteid IT-konsulentselskap.
               </li>
               <li>
-                <strong>Drivkraft i fagmiljøet:</strong> Leder programkomiteen
-                for <em>Make Data Smart</em>, og styremedlem i
-                <em>Dataforeningen Region Vest</em>.
+                <strong>Leder programkomitéen</strong> for <em>Make Data Smart</em> og
+                styremedlem i <em>Dataforeningen Region Vest</em>.
               </li>
               <li>
-                <strong>Utdanning:</strong> Master i statistikk (Universitetet i Bergen), bachelor
-                i matematikk og økonomi (Universitetet i Oslo), ledelse (Universitetet i Innlandet).
+                <strong>Master i statistikk</strong> (UiB), bachelor i matematikk
+                og økonomi (UiO), årsstudium i organisasjon og ledelse (UINN)
               </li>
             </ul>
           </div>
@@ -1377,178 +879,21 @@
               class="about-photo"
             />
             <p class="photo-caption">
-              Fra Vestlandskonferansen 2026: Paneldebatt om "Fra folkestyre til
-              plattformstyre"
+              Fra Vestlandskonferansen 2026
             </p>
           </div>
         </div>
       </section>
 
-      <section id="booking" class="section booking-section">
-        <p class="section-label">Kontakt</p>
-        <h2>Forespørsel og kontakt</h2>
-
-        <div class="booking-inner">
-          <div class="booking-intro">
-            <h3>La oss ta en prat</h3>
-            <p>
-              Fyll ut skjemaet, eller send en e-post direkte til
-              <a href="mailto:nora@kantega.no">nora@kantega.no</a>.
-            </p>
-            <p style="margin-top: 1.5rem">Velg hva henvendelsen gjelder:</p>
-            <div class="form-path-selector">
-              <button
-                type="button"
-                class="path-btn active"
-                data-path="foredrag"
-              >
-                🎙️ Foredrag
-              </button>
-              <button type="button" class="path-btn" data-path="radgivning">
-                💡 Strategisk rådgivning
-              </button>
-              <button type="button" class="path-btn" data-path="utvikling">
-                🚀 KI-utvikling og prosjekt
-              </button>
-            </div>
-          </div>
-
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/mykbjvel"
-            method="POST"
-            id="booking-form"
+      <section id="kontakt" class="section contact-section">
+        <h2>Kontakt</h2>
+        <div class="contact-actions">
+          <a href="mailto:nora@kantega.no" class="cta-button"
+            >nora@kantega.no</a
           >
-            <input
-              type="hidden"
-              id="inquiry-type"
-              name="Henvendelse_type"
-              value="Foredrag"
-            />
-
-            <div class="form-group">
-              <label for="name">Ditt navn *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Ditt navn"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Din e-post *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="din@epost.no"
-              />
-            </div>
-            <div class="form-group" id="subject-group">
-              <label for="subject" id="subject-label"
-                >Tema for foredraget (valgfritt)</label
-              >
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="F.eks. Kunstig intelligens i praksis"
-              />
-              <p class="form-note">
-                Vi kan også ta en uforpliktende prat for å skreddersy et tema
-                som treffer din målgruppe perfekt.
-              </p>
-            </div>
-            <div class="form-group" id="date-group">
-              <label for="date">Ønsket dato (valgfritt)</label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                style="font-family: inherit"
-              />
-            </div>
-            <div class="form-group">
-              <label for="body" id="body-label"
-                >Litt om arrangementet og målgruppen (valgfritt)</label
-              >
-              <textarea
-                id="body"
-                name="message"
-                rows="5"
-                placeholder="Skriv din melding her..."
-              ></textarea>
-            </div>
-            <input type="text" name="_gotcha" style="display: none" />
-            <button type="submit" class="cta-button" id="submit-button">
-              Send forespørsel
-            </button>
-            <p class="form-note" style="margin-top: 0.75rem">
-              Meldingen sendes direkte til min e-post, og jeg svarer deg så
-              raskt jeg kan.
-            </p>
-            <div
-              id="form-status"
-              style="
-                display: none;
-                margin-top: 1rem;
-                padding: 1rem;
-                font-weight: 600;
-              "
-            ></div>
-          </form>
+          <a href="tel:+4795820097" class="cta-button">+47 958 20 097</a>
         </div>
       </section>
-
-      <div class="leveregler-section">
-        <h3>
-          <a
-            href="https://www.kantega.no/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Kantegas leveregler</a
-          >
-        </h3>
-        <div class="leveregler-grid">
-          <div class="leveregler-item">
-            <img
-              src="images/svg-er av levereglene/Skap verdi.svg"
-              alt="Skap verdi"
-            />
-            <span>Skap verdi</span>
-          </div>
-          <div class="leveregler-item">
-            <img
-              src="images/svg-er av levereglene/Ta initiativ.svg"
-              alt="Ta initiativ"
-            />
-            <span>Ta initiativ</span>
-          </div>
-          <div class="leveregler-item">
-            <img
-              src="images/svg-er av levereglene/Vis lidenskap.svg"
-              alt="Vis lidenskap"
-            />
-            <span>Vis lidenskap</span>
-          </div>
-          <div class="leveregler-item">
-            <img
-              src="images/svg-er av levereglene/Vær nysgjerrig.svg"
-              alt="Vær nysgjerrig"
-            />
-            <span>Vær nysgjerrig</span>
-          </div>
-          <div class="leveregler-item">
-            <img
-              src="images/svg-er av levereglene/løft hverandre.svg"
-              alt="Løft hverandre"
-            />
-            <span>Løft hverandre</span>
-          </div>
-        </div>
-      </div>
 
       <footer class="footer">
         <p>
