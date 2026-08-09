@@ -34,6 +34,24 @@
         --accent: var(--k-red);
         --accent-hover: var(--k-red-dark);
         --border: rgba(39, 0, 61, 0.12);
+        --radius: 10px;
+        --bg-gradient:
+          radial-gradient(
+            ellipse 70% 55% at 82% 6%,
+            rgba(238, 58, 100, 0.16),
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 65% at 8% 88%,
+            rgba(2, 142, 167, 0.16),
+            transparent 60%
+          ),
+          linear-gradient(
+            170deg,
+            #ffffff 0%,
+            var(--k-white) 40%,
+            #efe4f5 100%
+          );
       }
 
       body.dark-theme {
@@ -45,6 +63,23 @@
         --accent: var(--k-red);
         --accent-hover: #ff4f7a;
         --border: rgba(255, 248, 252, 0.08);
+        --bg-gradient:
+          radial-gradient(
+            ellipse 70% 55% at 82% 6%,
+            rgba(238, 58, 100, 0.22),
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 65% at 8% 88%,
+            rgba(2, 142, 167, 0.2),
+            transparent 60%
+          ),
+          linear-gradient(
+            170deg,
+            #1c0033 0%,
+            #0e0017 45%,
+            #27003d 100%
+          );
       }
 
       * {
@@ -55,33 +90,14 @@
 
       body {
         font-family: 'Source Sans Pro', system-ui, sans-serif;
-        background: var(--bg);
+        background: var(--bg-gradient), var(--bg);
+        background-attachment: fixed;
         color: var(--text);
         line-height: 1.65;
         transition:
           background 0.3s,
           color 0.3s;
         overflow-x: hidden;
-      }
-
-      /* Ambient glow */
-      body::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background:
-          radial-gradient(
-            ellipse 60% 50% at 80% 10%,
-            rgba(238, 58, 100, 0.06),
-            transparent
-          ),
-          radial-gradient(
-            ellipse 50% 60% at 10% 80%,
-            rgba(2, 142, 167, 0.06),
-            transparent
-          );
-        pointer-events: none;
-        z-index: 0;
       }
 
       /* === NAVBAR === */
@@ -122,6 +138,7 @@
         align-items: center;
         gap: 2rem;
         list-style: none;
+        flex: 1;
       }
 
       .nav-links a {
@@ -134,6 +151,11 @@
 
       .nav-links a:hover {
         color: var(--accent);
+      }
+
+      .nav-icon-link {
+        display: flex;
+        align-items: center;
       }
 
       .nav-links .nav-cta {
@@ -151,6 +173,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        margin-left: auto;
       }
 
       .theme-btn {
@@ -163,13 +186,6 @@
         align-items: center;
       }
 
-      .header-kantega-logo {
-        height: 22px;
-        opacity: 0.8;
-      }
-      body:not(.dark-theme) .header-kantega-logo {
-        filter: invert(1) brightness(0.2);
-      }
 
       /* Mobile nav */
       .mobile-nav-header {
@@ -303,6 +319,25 @@
         text-decoration: underline;
       }
 
+      .hero-kantega-link {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 0.35em;
+        vertical-align: baseline;
+        text-decoration: none;
+      }
+
+      .hero-kantega-logo {
+        height: 1.5em;
+        width: auto;
+        display: block;
+        position: relative;
+        top: 0.2em;
+      }
+      body:not(.dark-theme) .hero-kantega-logo {
+        filter: invert(1) brightness(0.2);
+      }
+
       .cta-button {
         display: inline-block;
         background: var(--accent);
@@ -327,22 +362,14 @@
 
       .hero-photo-wrap {
         position: relative;
-      }
-
-      .hero-photo-wrap::before {
-        content: '';
-        position: absolute;
-        top: -12px;
-        right: -12px;
-        bottom: 12px;
-        left: 12px;
-        border: 2px solid var(--accent);
-        pointer-events: none;
+        display: flex;
+        justify-content: flex-start;
       }
 
       .hero-photo {
-        width: 100%;
+        width: 50%;
         display: block;
+        border-radius: var(--radius);
       }
 
       /* === TOPIC CARDS === */
@@ -406,31 +433,117 @@
         margin: 0;
       }
 
+      /* === STAGE STRIP === */
+      .stage-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        align-items: stretch;
+        margin-top: 3rem;
+      }
+
+      .stage-main {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+
+      .stage-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      .stage-block p {
+        margin: 0;
+      }
+
+      .stage-support {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+
+      .stage-support img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+
+      .stage-support img:first-child {
+        object-position: center top;
+      }
+      .stage-support img:last-child {
+        object-position: 70% center;
+      }
+
       /* === SERVICES === */
       .services-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2px;
-        background: var(--border);
-        border: 1px solid var(--border);
+        gap: 1.5rem;
         margin-top: 2.5rem;
       }
 
       .service-card {
         background: var(--bg-card);
-        padding: 2.5rem;
         display: flex;
         flex-direction: column;
         border-top: 3px solid var(--accent);
+        border-radius: var(--radius);
+        overflow: hidden;
       }
 
       .service-card:last-child {
         border-top-color: var(--k-teal);
       }
 
+      .service-photo {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        display: block;
+        margin-top: auto;
+        border-radius: 0 0 var(--radius) var(--radius);
+      }
+
+      .service-body {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+
       .service-card h3 {
         font-size: 1.15rem;
         margin-bottom: 1rem;
+      }
+
+      /* Tjenester lead banner */
+      .services-banner {
+        margin-top: 2.5rem;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+
+      .services-banner img {
+        width: 100%;
+        height: clamp(180px, 26vw, 320px);
+        object-fit: cover;
+        object-position: center 72%;
+        display: block;
+      }
+
+      .services-banner + .services-grid {
+        margin-top: 1.5rem;
       }
 
       .service-card p {
@@ -465,6 +578,7 @@
         height: 0;
         overflow: hidden;
         border: 1px solid var(--border);
+        border-radius: var(--radius);
       }
 
       .video-wrap video {
@@ -510,15 +624,8 @@
         aspect-ratio: 3/4;
         object-fit: cover;
         object-position: center bottom;
-        margin-left: auto;
-      }
-
-      .photo-caption {
-        font-size: 0.8rem;
-        color: var(--text-muted);
-        font-style: italic;
-        margin-top: 0.5rem;
-        text-align: center;
+        margin: 0 auto;
+        border-radius: var(--radius);
       }
 
       /* === CONTACT === */
@@ -570,10 +677,17 @@
         .hero-photo-wrap {
           max-width: 420px;
         }
+        .hero-photo {
+          width: 100%;
+        }
         .services-grid {
           grid-template-columns: 1fr;
         }
         .about-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        .stage-block {
           grid-template-columns: 1fr;
           gap: 2rem;
         }
@@ -649,18 +763,30 @@
         </div>
         <ul class="nav-links" id="nav-menu">
           <li><a href="#foredrag" class="nav-link">Foredrag</a></li>
-          <li><a href="#radgivning" class="nav-link">Rådgivning</a></li>
-          <li>
+          <li><a href="#radgivning" class="nav-link">Tjenester</a></li>
+          <li><a href="#om" class="nav-link">Om</a></li>
+          <li><a href="#kontakt" class="nav-cta nav-link">Kontakt</a></li>
+          <li class="nav-actions" id="nav-actions">
             <a
               href="https://www.linkedin.com/in/ki-nora"
               target="_blank"
               rel="noopener noreferrer"
-              class="nav-link"
-              >LinkedIn</a
+              class="nav-icon-link"
+              aria-label="LinkedIn"
             >
-          </li>
-          <li><a href="#kontakt" class="nav-cta nav-link">Kontakt</a></li>
-          <li class="nav-actions" id="nav-actions">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+                />
+              </svg>
+            </a>
             <button
               id="theme-toggle"
               class="theme-btn"
@@ -706,17 +832,6 @@
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
               </svg>
             </button>
-            <a
-              href="https://www.kantega.no"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="images/Kantega_logo_hvit.svg"
-                alt="Kantega"
-                class="header-kantega-logo"
-              />
-            </a>
           </li>
         </ul>
       </div>
@@ -730,20 +845,27 @@
             Nora<br /><strong>Gjøen&#8209;Gjøsæter</strong>
           </h1>
           <p class="hero-lead">
-            KI-leder og foredragsholder fra
-            <a
+            KI-leder og foredragsholder fra<!--
+            --><a
               href="https://www.kantega.no"
               target="_blank"
               rel="noopener noreferrer"
-              >Kantega</a
-            >.
+              class="hero-kantega-link"
+              aria-label="Kantega"
+            >
+              <img
+                src="images/Kantega_logo_hvit.svg"
+                alt="Kantega"
+                class="hero-kantega-logo"
+              />
+            </a>
           </p>
           <a href="#kontakt" class="cta-button">Ta kontakt</a>
         </div>
         <div class="hero-photo-wrap">
           <img
-            src="images/speaker.jpeg"
-            alt="Nora på scenen"
+            src="images/personer/nora/forside2_web.jpg"
+            alt="Nora"
             class="hero-photo"
           />
         </div>
@@ -755,8 +877,8 @@
         <h2>Foredrag</h2>
         <p>
           Jeg skreddersyr hvert foredrag etter publikum og anledning. Jeg
-          snakker også om andre tema enn eksemplene under, som prestasjonskultur
-          og ledelse fra livet som landslagskeeper.
+          snakker også om andre tema enn eksemplene under, som prestasjonskultur -
+          med eksempler og lærdom fra mer enn 15 år som toppidrettsutøver.
         </p>
         <div class="topic-grid">
           <div class="topic-card">
@@ -797,38 +919,84 @@
             </p>
           </div>
         </div>
-          <p>
-          </br>
-          Jeg har holdt foredrag og debattinnlegg på blant annet
-          <strong style="color: var(--text)"
-            >Vestlandskonferansen, Booster Conference, Arendalsuka, JavaZone og
-            Norway Fintech Festival</strong>. I tillegg holder jeg interne foredrag og ledersamlinger for blant
-          annet DNB, TV 2, Enova, BOB og Bergen Næringsråd.
-        </p>
+        <div class="stage-block">
+          <img
+            src="images/speaker.jpeg"
+            alt="Nora på scenen"
+            class="stage-main"
+            loading="lazy"
+          />
+          <div class="stage-right">
+            <p>
+              Jeg har holdt foredrag og debattinnlegg på blant annet
+              Vestlandskonferansen, Booster Conference, Arendalsuka, JavaZone og
+              Norway Fintech Festival, i tillegg til en rekke interne foredrag og
+              ledersamlinger for blant annet
+              <strong style="color: var(--text)"
+                >DNB, TV 2, Enova, BOB og Bergen Næringsråd</strong>.
+            </p>
+            <div class="stage-support">
+              <img
+                src="images/personer/nora/speaker2_web.jpg"
+                alt="Nora på scenen"
+                loading="lazy"
+              />
+              <img
+                src="images/personer/nora/speaker3_web.jpg"
+                alt="Nora på scenen"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="radgivning" class="section">
         <h2>Tjenester fra KI-avdelingen i Bergen</h2>
         <p>Vi hjelper virksomheter på Vestlandet med å ta i bruk KI.</p>
 
+        <div class="services-banner">
+          <img
+            src="images/personer/kantega/team2_web.jpg"
+            alt="KI-avdelingen i Kantega Bergen"
+            loading="lazy"
+          />
+        </div>
+
         <div class="services-grid">
           <div class="service-card">
-            <h3>Strategisk rådgivning</h3>
-            <p>For ledergrupper og styrer som skal stake ut kursen.</p>
-            <ul class="service-list">
-              <li><strong>Mulighetsstudier:</strong> Kartlegg og prioriter brukstilfeller med reell verdi.</li>
-              <li><strong>KI-kurs for ledere:</strong> Skreddersydd opplæring i KI og data.</li>
-              <li><strong>KI- og datastrategi:</strong> Rustet for det som kommer.</li>
-            </ul>
+            <div class="service-body">
+              <h3>Strategisk rådgivning</h3>
+              <p>For ledergrupper og styrer som skal stake ut kursen.</p>
+              <ul class="service-list">
+                <li><strong>Mulighetsstudier:</strong> Kartlegg og prioriter brukstilfeller med reell verdi.</li>
+                <li><strong>KI-kurs for ledere:</strong> Skreddersydd opplæring i KI og data.</li>
+                <li><strong>KI- og datastrategi:</strong> Rustet for det som kommer.</li>
+              </ul>
+            </div>
+            <img
+              src="images/personer/kantega/team3_web.jpg"
+              alt="Rådgivning i møte"
+              class="service-photo"
+              loading="lazy"
+            />
           </div>
           <div class="service-card">
-            <h3>Operativ KI-utvikling</h3>
-            <p>Skreddersydde løsninger vi setter i produksjon.</p>
-            <ul class="service-list">
-              <li><strong>Fra pilot til produksjon:</strong> Prototyper og RAG-chatbots i drift.</li>
-              <li><strong>Ansvarlig KI:</strong> Personvern, sikkerhet og sporbarhet innebygd.</li>
-              <li><strong>Arkitektur og MLOps:</strong> Infrastruktur, dataflyt og plattform.</li>
-            </ul>
+            <div class="service-body">
+              <h3>Operativ KI-utvikling</h3>
+              <p>Skreddersydde løsninger vi setter i produksjon.</p>
+              <ul class="service-list">
+                <li><strong>Fra pilot til produksjon:</strong> Prototyper og RAG-chatbots i drift.</li>
+                <li><strong>Ansvarlig KI:</strong> Personvern, sikkerhet og sporbarhet innebygd.</li>
+                <li><strong>Arkitektur og MLOps:</strong> Infrastruktur, dataflyt og plattform.</li>
+              </ul>
+            </div>
+            <img
+              src="images/personer/kantega/team1_web.jpg"
+              alt="Utvikling ved tavla"
+              class="service-photo"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -844,7 +1012,7 @@
         </div>
       </section>
 
-      <section class="section about-speaker">
+      <section id="om" class="section about-speaker">
         <h2>Bakgrunn</h2>
         <div class="about-grid">
           <div>
@@ -870,6 +1038,10 @@
                 <strong>Master i statistikk</strong> (UiB), bachelor i matematikk
                 og økonomi (UiO), årsstudium i organisasjon og ledelse (UINN)
               </li>
+              <li>
+                <strong>Tidligere landslagskeeper</strong> - seriemester,
+                cupmester og EM-sølvmedaljist.
+              </li>
             </ul>
           </div>
           <div>
@@ -877,10 +1049,8 @@
               src="images/vestland26.png"
               alt="Nora på Vestlandskonferansen"
               class="about-photo"
+              loading="lazy"
             />
-            <p class="photo-caption">
-              Fra Vestlandskonferansen 2026
-            </p>
           </div>
         </div>
       </section>

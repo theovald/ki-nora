@@ -26,10 +26,10 @@ def test_index_html_content():
     sections = soup.find_all("section")
     assert len(sections) >= 4  # Hero-split, Temaer, Scener, Bakgrunn, Booking
 
-    # Check for speaker image
+    # Check for hero image
     img = soup.find("img", class_="hero-photo")
     assert img is not None
-    assert img["src"] == "images/speaker.jpeg"
+    assert img["src"] == "images/personer/nora/forside2_web.jpg"
 
     # Check we have the topic cards
     topic_cards = soup.find_all(class_="topic-card")
@@ -39,9 +39,9 @@ def test_index_html_content():
     verv_items = soup.find_all("div", class_="service-card")
     assert len(verv_items) >= 2
 
-    # Check for extra image
-    vestland_img = soup.find("img", src="images/vestland26.png")
-    assert vestland_img is not None
+    # Check for the about-section speaker photo
+    about_photo = soup.find("img", class_="about-photo")
+    assert about_photo is not None
 
     # Check the contact section links directly to email (no form)
     assert soup.find("form") is None
