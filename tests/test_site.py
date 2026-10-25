@@ -52,3 +52,16 @@ def test_index_html_content():
     # Check JS link
     js_script = soup.find("script", src="script.js")
     assert js_script is not None
+
+def test_speaker_promo_video():
+    with open("index.html", "r", encoding="utf-8") as f:
+        soup = BeautifulSoup(f.read(), "html.parser")
+
+    foredrag = soup.find("section", id="foredrag")
+    video = foredrag.find("video")
+    assert video is not None
+    assert video["poster"] == "images/foredrag-promo-poster.jpg"
+    assert os.path.exists(video["poster"])
+    src = video.find("source")["src"]
+    assert src == "videos/foredrag-promo.mp4"
+    assert os.path.exists(src)
