@@ -1,0 +1,203 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nora Gjøen-Gjøsæter",
+  "givenName": "Nora",
+  "familyName": "Gjøen-Gjøsæter",
+  "birthDate": "1992",
+  "jobTitle": "Avdelingsleder og KI-lead, Kantega Bergen",
+  "description": "Avdelingsleder og KI-lead i Kantega Bergen. Statistiker og tidligere aktuar med over åtte år fra anvendt maskinlæring, dataplattformer og språkmodeller. Leder KI-avdelingen, fasiliterer ledergrupper og styrer, og bygger fortsatt selv. Tidligere landslagskeeper.",
+  "email": "mailto:nora@kantega.no",
+  "telephone": "+47 958 20 097",
+  "url": "https://ki-nora.no/",
+  "sameAs": ["https://www.linkedin.com/in/ki-nora"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Bergen", "addressCountry": "NO" },
+  "knowsLanguage": ["no", "en"],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Kantega",
+    "url": "https://www.kantega.no",
+    "description": "100 % ansatteid IT-konsulentselskap. Nora er medeier."
+  },
+  "dateModified": "2026-11-06",
+  "source": {
+    "flowcaseExport": "2026-03",
+    "note": "Ferdigheter, prosjekter, utdanning og foredrag til og med mars 2026 er fra Flowcase. Poster merket source=arbeidsomraade er fra Noras arbeidsområde i 2025 og 2026 og er ennå ikke registrert i Flowcase."
+  },
+  "roles": ["Rådgiver", "Data Scientist", "Data Engineer", "Tech-lead", "Arkitekt", "Scrum Master", "Prosjektleder", "Avdelingsleder"],
+  "competenceSummary": {
+    "ledelse": [
+      "Avdelingsleder med personal-, fag-, rekrutterings- og salgsansvar",
+      "Prosjekt- og kundeansvar for strategiske partnerskap (boligbyggelag, ca. 1000 timer)",
+      "Tech-lead og arkitekt for dataplattformteam (statlig energiforetak)",
+      "Scrum master og innføring av smidige arbeidsformer (maskinsynstartup, mediehus)",
+      "Styreerfaring: ansattvalgt varamedlem i Kantega, styremedlem i Dataforeningen Region Vest",
+      "Medlem av faggruppeledelsen for Data Science og AI i Kantega"
+    ],
+    "raadgivning": [
+      "Mulighetsstudier og prioriterte KI-veikart",
+      "KI- og datastrategi, beslutningsrammeverk som kobler verdi, gjennomførbarhet og ansvarlig KI",
+      "Ansvarlig KI, personvern, GDPR og risikovurdering",
+      "Anbud, tilbud og offentlige anskaffelser",
+      "Lederworkshops, KI-kurs for ledere og styresamlinger",
+      "KI-policy og agentidentitet"
+    ],
+    "teknisk": [
+      "Språkmodeller, RAG, agenter, MCP og Claude Code",
+      "Dataplattformer på Azure Databricks, Unity Catalog, Delta Lake og Google Cloud",
+      "Statistikk, aktuarmodeller, maskinlæring, simulering og evaluering",
+      "Infrastruktur som kode (Terraform, Pulumi), CI/CD og containere",
+      "Backend i FastAPI, frontend i React og Next.js"
+    ],
+    "formidling": [
+      "Konferanseforedrag: JavaZone, Booster, Arendalsuka, Vestlandskonferansen, Norway Fintech Festival",
+      "Leder programkomiteen for Make Data Smart Bergen",
+      "Kronikker i Dagens Næringsliv og fagblogg"
+    ]
+  },
+  "skillCategories": {
+    "Kompetanse": ["Datamodellering", "ETL", "ELT", "Dataarkitektur", "Arkitektur", "Arkitekturprinsipper", "Visualisering", "Maskinlæring", "Kunstig intelligens", "Generativ KI", "Store språkmodeller", "Chatbots", "Transfer Learning", "Big Data", "Stordata", "Dataplattform", "Matematisk simulering", "Statistikk", "Dataanalyse", "Analyse", "Feilhåndtering", "Skadeforsikring", "Forsikring", "Prismodellering", "Økonomi", "Rådgivning", "Behovsanalyse", "Behovskartlegging", "Dokumentasjon", "Kommunikasjon", "Brukerintervjuer", "Brukerinvolvering", "Rapportering", "GDPR", "Stakeholder-analyse", "Datadrevet innovasjon", "API", "Markedsanalyse", "Innsiktsarbeid", "Mobprogrammering", "AML", "CI/CD", "Teamledelse", "Tverrfaglig teamarbeid", "Tverrfaglig team", "Teamutvikling", "Infrastructure as Code (IaC)", "Infrastruktur", "Idé- og konseptutvikling", "Relasjonsdatabaser", "Datapresentasjon", "Plan- og strategiarbeid", "Kundeansvar", "Prosjektledelse", "Risikovurdering", "Kartlegging"],
+    "Maskinlæring og Data Science": ["scikit-learn", "TensorFlow", "PyTorch", "PyTorch Lightning", "Pandas", "Koalas", "PySpark", "Databricks", "MLflow", "Caret", "pycaret", "darts", "emblem", "Azure Machine Learning workspace", "Shiny", "Streamlit", "Jupyter", "CUDA", "Darknet", "OpenCV", "YOLOX", "Objektdeteksjon", "pm4py", "spaCy", "Natural Language Processing (NLP)", "OpenAI", "Azure OpenAI", "GPT-3", "GPT-4", "LLaMa", "LangChain", "Azure Search", "Azure Cognitive Services", "Google Vertex AI", "Azure Data Lake", "Avro", "Parquet", "Markdown"],
+    "Skyteknologi/Mellomvare/Plattformer": ["Azure", "Azure Cloud", "Azure DevOps", "Azure DevOps Pipelines", "Azure Pipelines", "Azure Repos", "Azure Service Bus", "Azure Functions", "Azure Keyvault", "Azure Blob Storage", "ADLS Gen2", "Azure Resource Management", "ARM templates", "Azure Logic Apps", "Azure Data Explorer", "Azure Synapse Analytics", "Azure Data Factory", "Azure Databricks", "Azure Kubernetes Service", "Azure Container Instances", "Azure Container Registry", "Azure Web App", "Azure EventHub", "Azure CLI", "Azure AD", "Azure AI Search", "Azure Machine Learning Studio", "Terraform", "Pulumi", "Checkov", "Apache Spark", "Delta Lake", "Structured Streaming", "Unity Catalog", "dbt", "Looker", "Apache Airflow", "Cloud Composer", "BigQuery", "Snowplow", "Kafka", "Power BI", "QlikView", "Google Cloud", "Google App Engine", "Google Cloud Storage", "AWS", "Rancher", "Docker", "Docker Compose", "Heroku", "FTP"],
+    "Programmeringsspråk": ["Python", "R", "SQL", "Scala", "C#", "C++", "Matlab", "SAS", "LaTeX", "HashiCorp Configuration Language", "Kotlin", "TypeScript", "JavaScript", "Bash"],
+    "Teknologi": ["REST", "REST API", "OpenAPI", "Swagger", "OData", "Serverless", "Server Side Rendering", "HTML", "CSS", "YAML", "nox"],
+    "Backend": ["FastAPI", "Flask", "Swagger"],
+    "Frontend": ["Node.js", "React", "Next.js", "Angular", "Styled Components", "yarn", "plotly.js"],
+    "Databaser": ["SQL", "Microsoft SQL Server", "T-SQL", "Azure SQL", "SQL Analytics", "PostgreSQL", "MongoDB", "CosmosDB", "InfluxDB", "Historian", "Google Cloud SQL"],
+    "Verktøy": ["Git", "GitHub", "GitHub Actions", "GitHub Pages", "GitLab", "Bitbucket", "Bitbucket Pipelines", "GitOps", "Jira", "Sentry.io", "Ansible", "Playwright", "Postman", "IntelliJ IDEA", "Poetry", "Visma", "Current", "Post-it og tusj"],
+    "Metode": ["Smidig prosess", "Smidig", "Scrum", "DevOps", "Intervju", "Google design sprint", "Certified Scrum Product Owner"],
+    "Brukt i 2026, ikke i Flowcase": ["Claude", "Claude Code", "Agentiske arbeidsflyter", "Model Context Protocol (MCP)", "Kantega LLM-proxy", "Azure Container Apps", "Azure Static Web Apps", "Microsoft Entra ID", "Prisma", "uv", "Podman", "Presidio", "Whisper", "Polars", "Prompt- og evalueringsdesign", "Personvernvurderinger (DPIA)"]
+  },
+  "hasOccupation": [
+    { "@type": "Occupation", "name": "Avdelingsleder og KI-lead", "employer": "Kantega", "startDate": "2025-08", "location": "Bergen" },
+    { "@type": "Occupation", "name": "Data scientist", "employer": "Kantega", "startDate": "2021-03", "endDate": "2025-07" },
+    { "@type": "Occupation", "name": "Data scientist", "employer": "Bouvet", "startDate": "2019-08", "endDate": "2021-02" },
+    { "@type": "Occupation", "name": "Aktuar og aktuarassistent", "employer": "Frende Skadeforsikring", "startDate": "2017-01", "endDate": "2019-08" },
+    { "@type": "Occupation", "name": "Kategori- og analyseansvarlig", "employer": "Prisguide", "startDate": "2016-02", "endDate": "2017-05" },
+    { "@type": "Occupation", "name": "Lærer", "employer": "Kuben Yrkesarena", "startDate": "2015-08", "endDate": "2016-10" },
+    { "@type": "Occupation", "name": "Profesjonell fotballspiller og landslagsspiller", "employer": "Sandviken IL og LSK Kvinner", "startDate": "2007-01", "endDate": "2020-12" }
+  ],
+  "parentalLeave": ["2021-07 til 2021-11", "2024-04 til 2025-02"],
+  "projects": [
+    { "customer": "Et boligbyggelag", "name": "Datastrategi, KI og dataplattform", "start": "2025-09", "end": null, "roles": ["Prosjektleder", "Strategisk rådgiver"], "summary": "Valgt i konkurranse med 14 andre. Totalansvar for tre delprosjekter, budsjett ca. 1000 timer. Mulighetsstudie med toårig KI-veikart og beslutningsrammeverk.", "skills": ["Plan- og strategiarbeid", "Datadrevet innovasjon", "Kundeansvar", "Prosjektledelse", "Risikovurdering", "Kartlegging"] },
+    { "customer": "Et mediehus", "name": "Team kundeinnsikt", "start": "2024-03", "end": null, "roles": ["Data Scientist"], "summary": "Kundemodeller for strømmetjenesten i dbt og Looker, churn, prosessforbedring. sannsynlighetsmodell for VM med Poisson-simulering.", "skills": ["BigQuery", "dbt", "Looker", "Google Cloud", "Apache Airflow", "Cloud Composer", "Snowplow", "Kafka", "Google Vertex AI", "Bitbucket Pipelines", "GitOps", "Ansible", "SQL", "Python", "AWS", "Maskinlæring"] },
+    { "customer": "Et statlig energiforetak", "name": "Etablering av dataplattform", "start": "2023-04", "end": "2024-04", "roles": ["Tech-lead", "Arkitekt"], "summary": "Kjerneteam for dataplattform i Azure Databricks med Unity Catalog. Rådgivning, use case, arkitektur, forvaltningsrutiner, Power BI.", "skills": ["Azure Databricks", "Unity Catalog", "Terraform", "Checkov", "Azure Pipelines", "Azure Keyvault", "ADLS Gen2", "MLflow", "Azure Functions", "Power BI", "LangChain", "GPT-4", "GPT-3.5", "Arkitekturprinsipper", "Infrastructure as Code (IaC)"] },
+    { "customer": "En bransjeorganisasjon for nettselskaper", "name": "Spørsmålstjeneste på tekniske veiledere med GPT-4, videreutvikling", "start": "2024-01", "end": "2024-04", "roles": ["Data Scientist"], "summary": "Modeller som begrenser hallusinering og øker svarkvalitet. Infrastruktur i kundens Azure-tenant.", "skills": ["LangChain", "Python", "Azure Web App", "CosmosDB", "MongoDB", "Store språkmodeller", "GPT-4", "FastAPI"] },
+    { "customer": "En bransjeorganisasjon for nettselskaper", "name": "Spørsmålstjeneste på tekniske veiledere med GPT-4, pilot", "start": "2023-09", "end": "2023-11", "roles": ["Data Scientist"], "summary": "RAG over bransjens tekniske veiledere, vist på en bransjekonferanse i november 2023. Ansvar for all infrastruktur, initiell modell og frontend.", "skills": ["GPT-4", "GPT-3", "Azure OpenAI", "CosmosDB", "Azure AI Search", "Azure Container Instances", "LangChain", "Docker", "Streamlit", "Terraform", "GitHub Actions", "Generativ KI", "Chatbots"] },
+    { "customer": "Kantega", "name": "CVlifter", "start": "2023-02", "end": "2023-12", "roles": ["Data Scientist"], "summary": "Python-pakke for CV-kvalitet med regelbasert og LLM-basert scoring, tester og infrastruktur.", "skills": ["GPT-3", "GPT-4", "LLaMa", "OpenAI", "spaCy", "Natural Language Processing (NLP)", "Transfer Learning", "PyTorch", "PyTorch Lightning", "FastAPI", "Angular", "TypeScript", "Playwright", "nox", "Terraform", "Azure Container Registry", "Azure Container Instances", "Docker Compose", "CI/CD", "Teamledelse"] },
+    { "customer": "Et kommunalt parkeringsselskap", "name": "Dashboard for bruk av parkeringsflåten", "start": "2023-04", "end": "2023-05", "roles": ["Rådgiver", "Arkitekt"], "summary": "Rådgivning om dataplattform og arkitekturskisser. Kunden valgte Azure Databricks.", "skills": ["Dataplattform", "Azure Databricks", "Azure Data Lake", "Power BI", "Datadrevet innovasjon"] },
+    { "customer": "Et meieri", "name": "MVP maskinlæring og meieridata", "start": "2022-12", "end": "2022-12", "roles": ["Prosjektleder", "Data Scientist"], "summary": "Sensordata, datakvalitet, anomalideteksjon og process mining.", "skills": ["pm4py", "Pandas", "scikit-learn", "InfluxDB", "Jupyter", "Poetry", "Python"] },
+    { "customer": "En teknologistartup innen maskinsyn", "name": "Roadside Vehicle People Counting", "start": "2022-02", "end": "2022-12", "roles": ["Utvikler", "Data Scientist", "Scrum Master"], "summary": "Maskinsyn på edge med innebygd personvern. Utvikling, devops, dataplattform i Google Cloud, smidig innføring.", "skills": ["TensorFlow", "PyTorch", "YOLOv4", "YOLOX", "Darknet", "OpenCV", "CUDA", "Objektdeteksjon", "Google Cloud", "Google App Engine", "Google Cloud SQL", "Rancher", "Terraform", "Ansible", "Sentry.io", "React", "Next.js", "Node.js", "Flask", "OpenAPI", "Scrum", "GDPR", "Teamledelse", "Teamutvikling", "Mobprogrammering"] },
+    { "customer": "En naturvernorganisasjon", "name": "Rangering av kommuner", "start": "2022-07", "end": "2022-08", "roles": ["Data Scientist", "Utvikler"], "summary": "Redesign av rangeringsmodellen, frontend og backend, deployment, Plotly.js.", "skills": ["Kotlin", "React", "TypeScript", "MongoDB", "Flask", "plotly.js", "Heroku", "Docker", "Server Side Rendering", "Statistikk", "Visualisering"] },
+    { "customer": "Et bildelingsselskap", "name": "Maskinlæringspilot med analyseplattform", "start": "2021-12", "end": "2022-02", "roles": ["Data Scientist", "Data Engineer"], "summary": "Datainnhenting, modeller i Azure Databricks, utrulling.", "skills": ["Azure Databricks", "MLflow", "darts", "pycaret", "PostgreSQL", "SQL Analytics", "Power BI", "Delta Lake", "Parquet", "Azure Keyvault"] },
+    { "customer": "Et advokatfirma", "name": "Datadrevet innsikt og effektivisering", "start": "2021-11", "end": "2021-11", "roles": ["Rådgiver"], "summary": "Totalansvar for innsiktsarbeid med risiko, kost og nytte. Rapport med prioriterte forslag.", "skills": ["Intervju", "Behovskartlegging", "Markedsanalyse", "GDPR", "Kommunikasjon", "Maskinlæring"] },
+    { "customer": "Et forsikringsselskap", "name": "Analyse av internt salgssystem", "start": "2021-08", "end": "2021-08", "roles": ["Rådgiver"], "summary": "Analyse av internt salgssystem, intervjuer og teknisk vurdering.", "skills": ["Rådgivning", "Arkitektur", "Dataplattform", "Behovsanalyse", "Stakeholder-analyse", "Brukerintervjuer", "Rapportering", "Brukerinvolvering"] },
+    { "customer": "Kantega", "name": "Internprosjekt AML og AI", "start": "2021-03", "end": "2021-06", "roles": ["Data Scientist", "Data Engineer"], "summary": "Grafanalyse for antihvitvask, ML-infrastruktur i Azure med MLflow og Terraform. Støttet av Innovasjon Norge.", "skills": ["MLflow", "Azure Databricks", "Delta Lake", "Structured Streaming", "Azure Kubernetes Service", "Terraform", "ARM templates", "R", "Shiny", "Streamlit", "AML"] },
+    { "customer": "Kantega", "name": "Internprosjekt Kanalytics", "start": "2021-04", "end": "2022-02", "roles": ["Data Engineer", "Data Scientist"], "summary": "Økonomidata fra kilde til Power BI via Azure Functions, Databricks og Azure SQL. Terraform og Pulumi.", "skills": ["Azure Functions", "Azure Databricks", "Azure SQL", "Power BI", "Terraform", "Pulumi", "OData", "Visma", "Current"] },
+    { "customer": "Et energikonsern", "name": "Plattform for innsikt og analyse", "start": "2020-02", "end": "2021-02", "roles": ["Data Engineer"], "employer": "Bouvet", "summary": "Kjerneteam for arkitektur. Delta Lake i bronze, silver, gold, structured streaming, PySpark-standarder, Terraform-deployment.", "skills": ["Azure Databricks", "Delta Lake", "Structured Streaming", "PySpark", "Koalas", "Azure Synapse Analytics", "Azure Data Explorer", "Azure Service Bus", "Azure EventHub", "Terraform", "Avro", "Parquet", "Power BI", "Big Data"] },
+    { "customer": "En storkommune", "name": "Etablering av datasjø", "start": "2019-09", "end": "2020-04", "roles": ["Data Scientist", "Data Engineer"], "employer": "Bouvet", "summary": "Hovedansvar for kode og infrastruktur i Azure Databricks. Sensordata fra 16 000 punkter. Strenge krav til personvern og sikker sone.", "skills": ["Azure Databricks", "Apache Spark", "C#", "T-SQL", "Azure Data Factory", "Azure EventHub", "Azure Functions", "Terraform", "Pulumi", "Power BI", "GDPR", "Anonymisering"] },
+    { "customer": "Frende Skadeforsikring (arbeidsgiver)", "name": "Pilotprosjekter maskinlæring og aktuararbeid", "start": "2017-01", "end": "2019-08", "roles": ["Data Scientist", "Aktuar"], "employer": "Frende Skadeforsikring", "summary": "ML-piloter i R, Python, SAS og SQL. Aktuarrapporter, prismodellering, tariffering, markedsanalyser.", "skills": ["R", "SAS", "SQL", "Python", "emblem", "QlikView", "Skadeforsikring", "Prismodellering", "Maskinlæring", "Matematisk simulering", "GDPR"] },
+    { "customer": "Et finansieringsselskap", "name": "Tilbud på KI-arbeid", "start": "2026-09", "end": null, "roles": ["Leveranseleder", "Ekspert"], "source": "arbeidsomraade", "summary": "Tilbud levert 25.09.2026, kom til finalerunde." },
+    { "customer": "Et konserthus", "name": "Smartluft fase 1", "start": "2026", "end": null, "roles": ["Rådgiver", "Utvikler"], "source": "arbeidsomraade", "summary": "Prognoser for ventilasjon basert på CO2, bookinger og belegg, med leverandøren av byggautomasjon." },
+    { "customer": "En innovasjonsklynge", "name": "KI-veiviser for ledere og innovasjonskonferanse", "start": "2026", "end": null, "roles": ["Rådgiver", "Foredragsholder"], "source": "arbeidsomraade", "summary": "Chatbasert modenhets- og veikartverktøy på Claude via Kantegas LLM-proxy. Pre-read og tre innlegg på en regional innovasjonskonferanse 29. og 30.10.2026." },
+    { "customer": "En regional næringsaktør", "name": "KI-workshops", "start": "2025-09", "end": null, "roles": ["Fasilitator"], "source": "arbeidsomraade", "summary": "Workshop om KI i praksis og KI-workshop med egen veiviser 26.11.2026." },
+    { "customer": "Et boligbyggelag", "name": "Styreportal med smart søk og styresamling", "start": "2026", "end": null, "roles": ["Rådgiver"], "source": "arbeidsomraade", "summary": "Personvernvurdering, workshop og styresamling om KI i styrearbeidet." },
+    { "customer": "En ideell organisasjon", "name": "Ledersamling og strategisk veikart", "start": "2026", "end": null, "roles": ["Fasilitator"], "source": "arbeidsomraade" },
+    { "customer": "Ledergrupper i energi, elektrobransjen, shipping, reiseliv og sjømat", "name": "Lederworkshops om agentisk KI", "start": "2025", "end": null, "roles": ["Fasilitator"], "source": "arbeidsomraade" },
+    { "customer": "Et direktorat", "name": "Mini-workshop om agentidentitet", "start": "2026-11", "end": "2026-11", "roles": ["Fasilitator"], "source": "arbeidsomraade" },
+    { "customer": "Et direktorat", "name": "Kamerautredning", "start": "2026", "end": null, "roles": ["Rådgiver"], "source": "arbeidsomraade" },
+    { "customer": "Et direktorat", "name": "KI-rådgivning i tilbud på rammeavtale", "start": "2026", "end": null, "roles": ["Tilbudsansvarlig"], "source": "arbeidsomraade" },
+    { "customer": "Kommunesektorens digitaliseringsselskap", "name": "Innspill i markedsdialog om nasjonal KI", "start": "2026-09", "end": "2026-09", "roles": ["Rådgiver"], "source": "arbeidsomraade" },
+    { "customer": "Kantega", "name": "Doffibot", "start": "2025", "end": null, "roles": ["Utvikler", "Produkteier"], "source": "arbeidsomraade", "summary": "Klassifiserer Doffin-kunngjøringer med språkmodeller. Kjører 55 ganger i uken, over 2000 kunngjøringer vurdert. Azure Container Apps, Terraform, Entra ID.", "skills": ["Claude", "Azure Container Apps", "Terraform", "Microsoft Entra ID", "Python"] },
+    { "customer": "Kantega", "name": "kagentic og delt repo for agenter og skills", "start": "2026", "end": null, "roles": ["Utvikler", "Fagleder"], "source": "arbeidsomraade", "summary": "Kursprogram i agentisk KI i ti moduler og Kantegas felles repo for skills, agenter og hooks til Claude Code.", "skills": ["Claude Code", "Model Context Protocol (MCP)", "Agentiske arbeidsflyter"] }
+  ],
+  "alumniOf": [
+    { "@type": "EducationalOrganization", "name": "Universitetet i Innlandet", "degree": "Årsstudium i organisasjon og ledelse", "startDate": "2024", "endDate": "2025" },
+    { "@type": "EducationalOrganization", "name": "Universitetet i Bergen", "degree": "Master i statistikk, finans- og forsikringsmatematikk", "startDate": "2017", "endDate": "2018" },
+    { "@type": "EducationalOrganization", "name": "Universitetet i Oslo", "degree": "Bachelor i matematikk og økonomi", "startDate": "2014", "endDate": "2016" },
+    { "@type": "EducationalOrganization", "name": "University of Florida", "degree": "Årsstudium", "startDate": "2013", "endDate": "2013" },
+    { "@type": "EducationalOrganization", "name": "Knarvik VGS", "degree": "TAF, fagbrev i produksjonselektronikk", "startDate": "2008", "endDate": "2012" }
+  ],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Certified Scrum Product Owner (CSPO)", "recognizedBy": "Glasspaper / Scrum Alliance", "dateCreated": "2022-09" },
+    { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure Data Engineer Associate", "recognizedBy": "Microsoft", "dateCreated": "2021-05" },
+    { "@type": "EducationalOccupationalCredential", "name": "Databricks Certified Professional Data Scientist", "recognizedBy": "Databricks", "dateCreated": "2020-09" },
+    { "@type": "EducationalOccupationalCredential", "name": "Databricks Certified Associate Developer for Apache Spark 2.4", "recognizedBy": "Databricks", "dateCreated": "2019-11" },
+    { "@type": "EducationalOccupationalCredential", "name": "CompTIA A+", "recognizedBy": "CompTIA", "dateCreated": "2011-12" }
+  ],
+  "courses": [
+    { "name": "Ansattvalgt styremedlem", "provider": "Styreforeningen", "date": "2022-06" },
+    { "name": "MLflow: Managing the Machine Learning Lifecycle", "provider": "Databricks", "date": "2020-09" },
+    { "name": "Apache Spark tuning and best practices", "provider": "Databricks", "date": "2019-10" },
+    { "name": "Structured Streaming (with capstone)", "provider": "Databricks", "date": "2019-10" },
+    { "name": "Learning paths: Azure Data Science VM, Azure Databricks, Store data in Azure", "provider": "Microsoft", "date": "2019" }
+  ],
+  "talks": [
+    { "date": "2026-11", "title": "Mini-workshop om agentidentitet", "venue": "Direktorat", "source": "arbeidsomraade" },
+    { "date": "2026-10", "title": "Tre innlegg om KI for ledere", "venue": "Regional innovasjonskonferanse", "source": "arbeidsomraade" },
+    { "date": "2026-10", "title": "Det er på tide å ta ansvar", "venue": "Lederkonferanse i Bergen", "source": "arbeidsomraade" },
+    { "date": "2026-10", "title": "KI i styrearbeidet", "venue": "Styresamling i et boligbyggelag", "source": "arbeidsomraade" },
+    { "date": "2026", "title": "Agentisk KI, kart og terreng", "venue": "Kedegåri Bergen og Loft", "source": "arbeidsomraade" },
+    { "date": "2026", "title": "Mindre risiko, mer fart", "venue": "ODA-nettverk Bergen", "source": "arbeidsomraade" },
+    { "date": "2026-08", "title": "Lyntale", "venue": "JavaZone", "source": "arbeidsomraade" },
+    { "date": "2026-08", "title": "Min vei til KI", "venue": "TENK Tech Camp", "source": "arbeidsomraade" },
+    { "date": "2026-07", "title": "Podkast", "venue": "Økonomiamatørene", "source": "arbeidsomraade" },
+    { "date": "2026-05", "title": "Foredrag", "venue": "Tek Norge årskonferanse", "source": "arbeidsomraade" },
+    { "date": "2026", "title": "Derfor tar ikke KI jobben din", "venue": "Smidig Digitalisering", "source": "arbeidsomraade" },
+    { "date": "2026-04", "title": "Ansvarlig KI er et lederansvar", "venue": "Frokostmøte", "source": "arbeidsomraade" },
+    { "date": "2026-04", "title": "Hvorfor KI ikke tar jobbene våre", "venue": "Bobler & Business", "source": "arbeidsomraade" },
+    { "date": "2026-03", "title": "KI-akademiet", "venue": "Bergen Næringsråd" },
+    { "date": "2026-03", "title": "AI i praksis: verdi og ledelse", "venue": "Ledergruppe i et energiselskap" },
+    { "date": "2026-03", "title": "Hvordan dra nytte av egne data med KI", "venue": "Booster Conference" },
+    { "date": "2026-02", "title": "Paneldebatt: Fra folkestyre til plattformstyre", "venue": "Vestlandskonferansen" },
+    { "date": "2026-01", "title": "Status: Generativ KI i Bergen 2025", "venue": "Generative AI Meetup" },
+    { "date": "2025-09", "title": "Fra garderobeprat til git commit", "venue": "JavaZone" },
+    { "date": "2025-09", "title": "Workshop: Kunstig intelligens i praksis", "venue": "Regional næringsaktør" },
+    { "date": "2025-09", "title": "Kunstig intelligens i praksis", "venue": "Building Innovation" },
+    { "date": "2025-08", "title": "Debattinnlegg", "venue": "Arendalsuka", "source": "arbeidsomraade" },
+    { "date": "2025-04", "title": "AI-verktøy for koding: en jungel av muligheter", "venue": "ODA, HVL og SheCodes" },
+    { "date": "2025-04", "title": "AI: Brilliant but Biased?", "venue": "Norway Fintech Festival" },
+    { "date": "2023-09", "title": "Anta bias. Alltid.", "venue": "JavaZone" },
+    { "date": "2023-05", "title": "Transformer models (like ChatGPT)", "venue": "Storbank" },
+    { "date": "2023-05", "title": "Workshop OpenAI og GPT-modeller", "venue": "Energikonsern" },
+    { "date": "2023-04", "title": "Detecting Inconsistencies in Financial Reports with Large Language Models", "venue": "Norway Fintech Festival" },
+    { "date": "2023-03", "title": "Anta bias. Alltid.", "venue": "Booster Conference" },
+    { "date": "2023-03", "title": "ML + UX = Sant?", "venue": "Booster Conference" },
+    { "date": "2023-03", "title": "Transformermodeller: etiske utfordringer", "venue": "Frokost@Kantega Trondheim" },
+    { "date": "2023-01", "title": "Transformermodeller: etiske utfordringer", "venue": "Frokost@Kantega Bergen" },
+    { "date": "2022-11", "title": "Maskinlæring og bærekraft", "venue": "Make Data Smart Trondheim" },
+    { "date": "2022-08", "title": "Workshop i kunstig intelligens med low code og åpne data", "venue": "Kantega" },
+    { "date": "2022-06", "title": "Dataene dine er forretningens drivstoff", "venue": "Frokost@Kantega Trondheim" },
+    { "date": "2022-05", "title": "Dataene dine er forretningens drivstoff", "venue": "Frokost@Kantega Oslo" },
+    { "date": "2022-02", "title": "Data er forretningens drivstoff", "venue": "Frokost@Kantega Bergen" }
+  ],
+  "talkTopics": [
+    "Derfor tar ikke KI jobben din",
+    "Anta bias. Alltid.",
+    "Ansvarlig kunstig intelligens er et lederansvar",
+    "Agentisk KI for ledere",
+    "Prestasjonskultur fra toppidrett"
+  ],
+  "publications": [
+    { "date": "2018-12", "title": "Boosted GAMLSS in General Insurance: Case Studies in Travel and Auto Liability Insurance", "type": "Masteroppgave" },
+    { "title": "Faren ligger i det maskinen får rett om", "type": "Kronikk", "venue": "Dagens Næringsliv" },
+    { "title": "KI-bruk er ikke et mål i seg selv", "type": "Debattinnlegg" },
+    { "title": "Kantega-bloggen 2021 til 2023: MLOps, AutoML, dataplattform, bias, kommunerangering", "type": "Fagblogg" }
+  ],
+  "positions": [
+    { "name": "Styremedlem, Dataforeningen Region Vest", "startDate": "2026" },
+    { "name": "Leder for programkomiteen, Make Data Smart Bergen", "startDate": "2023" },
+    { "name": "Ansattvalgt 1. varamedlem, styret i Kantega", "startDate": "2022", "endDate": "2024" },
+    { "name": "Medlem av faggruppeledelsen for Data Science og AI, Kantega", "startDate": "2021" }
+  ],
+  "sport": {
+    "summary": "Keeper for Sandviken IL, LSK Kvinner og A-landslaget fra 2007 til 2020. Seriemester, cupmester og EM-sølvmedaljist. Over 15 år som toppidrettsutøver.",
+    "honors": ["Seriemester", "Cupmester", "EM-sølv med A-landslaget"]
+  },
+  "agentGuidance": {
+    "useFor": ["Matching mot oppdrag og anbud", "Vurdering som foredragsholder eller paneldeltaker", "Vurdering til styreverv og rådgivningsoppdrag"],
+    "contact": "nora@kantega.no",
+    "doNot": ["Kunder er anonymisert med bransje. Ikke gjett på hvem de er, og ikke utvid tall", "Ikke bruk andre e-postadresser enn nora@kantega.no"],
+    "files": { "short": "llms.txt", "full": "llms-full.txt", "page": "for-agenter/index.html", "main": "index.html" }
+  }
+}

@@ -65,3 +65,53 @@ def test_speaker_promo_video():
     src = video.find("source")["src"]
     assert src == "videos/foredrag-promo.mp4"
     assert os.path.exists(src)
+
+
+def test_agent_profile_files_exist():
+    for path in ("llms.txt", "llms-full.txt", "nora.json", "for-agenter/index.html",
+                 "for-agenter/agent.css", "for-agenter/agent.js"):
+        assert os.path.exists(path), f"{path} mangler"
+
+
+def test_main_page_links_agent_files():
+    with open("index.html", "r", encoding="utf-8") as f:
+        soup = BeautifulSoup(f.read(), "html.parser")
+    hrefs = {link.get("href") for link in soup.find_all("link", rel="alternate")}
+    assert {"llms.txt", "nora.json", "for-agenter/index.html"} <= hrefs
+
+
+def test_nora_json_structure():
+    import json
+    with open("nora.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    assert data["@type"] == "Person"
+    assert data["email"] == "mailto:nora@kantega.no"
+    assert "nora.gjoen-gjoseter" not in json.dumps(data)
+    for key in ("skillCategories", "projects", "talks", "positions", "alumniOf"):
+        assert data[key], f"{key} er tom"
+    assert len(data["projects"]) >= 17
+    assert "Python" in data["skillCategories"]["Programmeringsspråk"]
+
+
+def test_agent_page_structure():
+    with open("for-agenter/index.html", "r", encoding="utf-8") as f:
+        soup = BeautifulSoup(f.read(), "html.parser")
+    robots = soup.find("meta", attrs={"name": "robots"})
+    assert robots is not None and "noindex" in robots["content"]
+    ids = {s.get("id") for s in soup.find_all("section")}
+    assert {"sammendrag", "ledelse", "teknisk", "ferdigheter", "prosjekter",
+            "foredrag", "verv", "kontakt"} <= ids
+    assert soup.find("script", type="application/ld+json") is not None
+    assert soup.find("a", href="mailto:nora@kantega.no") is not None
+    assert "nora.gjoen-gjoseter" not in str(soup)
+    tags = soup.select("#ferdigheter .tags li")
+    assert len(tags) >= 200
+    assert len(soup.select("#prosjekter .project")) >= 17
+
+
+def test_llms_txt_content():
+    with open("llms.txt", "r", encoding="utf-8") as f:
+        text = f.read()
+    assert text.startswith("# Nora Gjøen-Gjøsæter")
+    assert "nora@kantega.no" in text
+    assert "nora.json" in text and "llms-full.txt" in text

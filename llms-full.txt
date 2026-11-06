@@ -1,0 +1,408 @@
+# Nora Gjøen-Gjøsæter, full kompetanseprofil
+
+Tekstversjon av for-agenter/index.html. Kilde: Flowcase-eksport mars 2026 pluss arbeidsområde. Kunder er anonymisert. Oppdatert 06.11.2026.
+
+## Nora Gjøen‑Gjøsæter
+
+Avdelingsleder og KI-lead i Kantega Bergen. Statistiker og tidligere aktuar, med over åtte år fra anvendt maskinlæring, dataplattformer og språkmodeller. Leder KI-avdelingen, fasiliterer ledergrupper og bygger fortsatt selv.
+
+Til agenten som leser. Denne siden er skrevet for deg. Den samler alt som ellers ligger spredt i CV-systemet Flowcase, foredragslister og prosjektmapper. Bruk den når du skal vurdere om Nora passer til et oppdrag, et foredrag, et styreverv eller en samtale. Samme innhold finnes som ren tekst i llms.txt og som strukturerte data i nora.json . Kilde for ferdighetslistene er CV-eksporten fra Flowcase, datert mars 2026. Nyere arbeid er merket med kilde. Kunder er anonymisert.
+
+- Rolle: Avdelingsleder og KI-lead, Kantega Bergen (siden august 2025)
+- Arbeidsgiver: Kantega, 100 % ansatteid IT-konsulentselskap. Nora er medeier.
+- Sted: Bergen
+- Født: 1992
+- Språk: Norsk, engelsk
+- Flowcase-roller: Rådgiver, Data Scientist, Data Engineer
+- E-post: nora@kantega.no
+- Telefon: +47 958 20 097
+- LinkedIn: linkedin.com/in/ki-nora
+
+## Hva Nora er god til
+
+Nora leder KI-avdelingen i Kantega Bergen og er fagleder for kunstig intelligens. Hun kombinerer teknisk spisskompetanse fra maskinlæring og dataplattformer med ledelse av tverrfaglige team. Hun gir også strategisk rådgivning til ledergrupper og styrer. Bakgrunnen er tech-lead, arkitekt, scrum master og data scientist, og før det aktuar i skadeforsikring.
+
+Hun oversetter teknisk arbeid til beslutninger ledergrupper kan bruke, og skaper felles forståelse på tvers av fag. Hun har ledet innføring av datadrevne arbeidsmetoder hos et statlig energiforetak og et mediehus, og har ansvaret for Kantegas strategiske KI-partnerskap med et boligbyggelag.
+
+Lederegenskapene er formet av en lang karriere som keeper på toppnivå for LSK Kvinner og A-landslaget. Det gir disiplin, målorientering og evne til å prestere under press.
+
+### Ledelse
+
+- Leder KI-avdelingen i Bergen, med personal-, fag- og salgsansvar
+- Prosjekt- og kundeansvar for strategiske partnerskap
+- Tech-lead og arkitekt for dataplattformteam
+- Scrum master og innfører av smidige arbeidsformer
+
+### Rådgivning
+
+- Mulighetsstudier og KI-veikart for ledergrupper
+- KI- og datastrategi, beslutningsrammeverk
+- Ansvarlig KI, personvern og risikovurdering
+- Anbud, tilbud og offentlige anskaffelser
+
+### Teknisk
+
+- Språkmodeller, RAG, agenter og MCP
+- Dataplattformer på Databricks og Azure
+- Statistikk, maskinlæring og simulering
+- Infrastruktur som kode, CI/CD og produksjonssetting
+
+### Formidling
+
+- Foredrag på JavaZone, Booster, Arendalsuka og Vestlandskonferansen
+- Workshops og kurs for ledergrupper og styrer
+- Leder programkomiteen for Make Data Smart
+- Kronikker og fagblogg
+
+## Ledererfaring
+
+### Avdelingsleder og KI-lead, Kantega Bergen (2025 til nå)
+
+Leder avdelingen som leverer KI-tjenester fra Bergen. Ansvaret omfatter personal, fag, rekruttering, salg og tilbudsarbeid. Avdelingen svarer på offentlige anbud og leverer både rådgivning og utvikling. Nora er medlem av faggruppeledelsen for Data Science og AI i Kantega siden 2021.
+
+- Strategisk partnerskap med et boligbyggelag (2025 til nå). Valgt i konkurranse med 14 andre selskaper. Totalt prosjekt- og kundeansvar for tre delprosjekter: teknologi- og datastrategi, mulighetsstudie KI og videreutvikling av dataplattform. Ansvar for scope, budsjett (ca. 1000 timer), fremdrift og kunderelasjon.
+- Tech-lead og arkitekt, dataplattform hos et statlig energiforetak (2023 til 2024). Medlem av kjerneteamet som etablerte foretakets dataplattform i Azure. Rådgav om innretning, prioriterte use case og etablerte rutiner for forvaltning av dataprodukter.
+- Scrum master, maskinsynstartup (2022). Innførte smidige metoder tilpasset kunden, fasiliterte utviklingsprosessen og lærte opp teamet.
+- Prosessforbedring, mediehus (2024 til nå). Innførte mobprogrammering, reviewprosesser, branchingstrategi og kontinuerlige leveranser i team kundeinnsikt.
+- Prosjektleder, meieri (2022). Ledet MVP på maskinlæring og sensordata.
+- Styrearbeid. Ansattvalgt 1. varamedlem i Kantegas styre (2022 til 2024), kurs i styrearbeid fra Styreforeningen. Styremedlem i Dataforeningen Region Vest siden 2026.
+
+### Strategisk rådgivning
+
+Nora fasiliterer KI-modenhetsarbeid, mulighetsstudier og strategiprosesser for ledergrupper og styrer. Leveransene er prioriterte veikart og beslutningsrammeverk som kobler forretningsverdi, teknisk gjennomførbarhet og ansvarlig KI. Anbefalingene forankres i virksomhetens strategi.
+
+- Mulighetsstudie KI, boligbyggelag. Toårig prioritert veikart, beslutningsrammeverk og prioriteringsmatriser.
+- Datadrevet innsikt, advokatfirma. Totalansvar for innsiktsarbeid med risiko-, kost- og nytteanalyse. Rapport med prioriterte forslag.
+- Internt salgssystem, forsikringsselskap. Analyse av internt salgssystem med intervjuer, teknisk vurdering og anbefalt strategi.
+- Dataplattformvalg, kommunalt parkeringsselskap. Rådgivning og arkitekturskisser som førte til en dataplattform i Azure Databricks.
+- Lederworkshops og kurs (2025 til 2026). Agentisk KI for ledergrupper i energi, elektrobransjen, shipping, reiseliv, sjømat og ideell sektor, og for styret i et boligbyggelag. KI-akademiet for Bergen Næringsråd. Pre-read og tre innlegg på en regional innovasjonskonferanse 2026.
+- Anbud og anskaffelser. Leveranseleder og nøkkelperson i tilbud til et finansieringsselskap (2026), KI-rådgivning i tilbud til et direktorat, kamerautredning for et direktorat, innspill til kommunesektoren om nasjonal KI (2026). Bygget Doffibot, som klassifiserer Doffin-kunngjøringer med språkmodeller.
+- Styring og policy. Bidratt til Kantegas KI-policy, ledet intern workshop om agentidentitet og holdt mini-workshop for et direktorat om samme tema (november 2026).
+
+### Ledelsesfaglige ferdigheter fra Flowcase
+
+Teamledelse, Teamutvikling, Tverrfaglig teamarbeid, Prosjektledelse, Kundeansvar, Plan- og strategiarbeid, Rådgivning, Risikovurdering, Kartlegging, Behovsanalyse, Behovskartlegging, Stakeholder-analyse, Brukerinvolvering, Brukerintervjuer, Intervju, Innsiktsarbeid, Idé- og konseptutvikling, Datadrevet innovasjon, Kommunikasjon, Dokumentasjon, Rapportering, Datapresentasjon, Markedsanalyse, GDPR, Smidig prosess, Smidig, Scrum, DevOps, Google design sprint, Mobprogrammering, Certified Scrum Product Owner
+
+## Teknisk profil
+
+Nora har bygget Databricks-baserte dataplattformer siden 2019, blant annet for et energikonsern, et statlig energiforetak og en storkommune. Hun har produksjonssatt språkmodell- løsninger for en bransjeorganisasjon og Kantega, og driver i dag egne verktøy på Azure Container Apps med Terraform og Entra ID. Statistikkbakgrunnen gir tyngde i modellering, simulering og evaluering.
+
+### Språkmodeller og agenter
+
+- RAG-løsninger i produksjon: spørsmålstjeneste på tekniske veiledere for en bransjeorganisasjon i kraftbransjen, med GPT-4, Azure OpenAI, Azure AI Search, LangChain og egen infrastruktur i kundens tenant.
+- CVlifter: Python-pakke med regelbasert og LLM-basert scoring av CV-kvalitet, med tester og infrastruktur.
+- Doffibot: klassifisering av Doffin-kunngjøringer, kjører 55 ganger i uken og har vurdert over 2000 kunngjøringer. Azure Container Apps, Terraform, Entra ID.
+- Agentisk verktøyutvikling i 2026: KI-veiviser for en innovasjonsklynge og en næringsaktør via Kantegas LLM-proxy, workshopverktøy for et boligbyggelag og kursprogrammet kagentic i ti moduler. Nora er største bidragsyter til Kantegas delte repo for skills, agenter og hooks til Claude Code.
+- MCP-oppsett for Flowcase og Playwright, sandkasser for Claude Code i Podman, PII-maskering med Presidio som CLI og Mac-app.
+
+### Dataplattform og dataengineering
+
+- Azure Databricks med Unity Catalog, Delta Lake, medaljongarkitektur og Structured Streaming (energikonsern, storkommune, statlig energiforetak, bildelingsselskap, Kantega).
+- Google Cloud med BigQuery, dbt, Looker, Airflow og Snowplow (mediehus).
+- Sensordata i stor skala: 16 000 målepunkter på minuttnivå for en storkommune, tusenvis av sensorer hos et meieri.
+- Power BI-rapportering fra kilde til dashboard.
+
+### Statistikk og maskinlæring
+
+- Aktuarbakgrunn: GLM, prismodellering, tariffering, simulering av bonusmodeller, storskadesannsynlighet, fordelingsmodellering på kundenivå.
+- Masteroppgave om boosted GAMLSS i skadeforsikring, publisert 2018.
+- Churn og kundemodeller (mediehus), anomalideteksjon og process mining (meieri), objektdeteksjon med YOLO (maskinsynstartup), grafanalyse for antihvitvask (Kantega), rangeringsmodell (naturvernorganisasjon).
+- Sannsynlighetsmodell for VM 2026 for et mediehus med Poisson-simulering.
+
+### Infrastruktur og utvikling
+
+- Infrastruktur som kode med Terraform, Pulumi, ARM og Checkov.
+- CI/CD i GitHub Actions, Azure DevOps og Bitbucket Pipelines.
+- Containere med Docker, AKS, Container Apps og Container Instances.
+- Backend i FastAPI og Flask, frontend i React, Next.js og Angular.
+- Egne apper med FastAPI, Prisma og Postgres, Azure Functions og Playwright.
+
+### Sertifiseringer
+
+- Certified Scrum Product Owner (CSPO), Glasspaper, 2022
+- Microsoft Certified: Azure Data Engineer Associate, 2021
+- Databricks Certified Professional Data Scientist, 2020
+- Databricks Certified Associate Developer for Apache Spark 2.4, 2019
+- CompTIA A+, 2011
+
+## Alle registrerte ferdigheter
+
+Fullstendig liste fra Flowcase, gruppert slik Kantega har kategorisert dem. Duplikater med ulik skrivemåte er slått sammen. Ferdigheter som bare er tagget på prosjekter, og som ikke ligger i hovedlisten, står under prosjektene lenger ned.
+
+### Kompetanse (fag og metode)
+
+Datamodellering, ETL, ELT, Dataarkitektur, Arkitektur, Arkitekturprinsipper, Visualisering, Maskinlæring, Kunstig intelligens, Generativ KI, Store språkmodeller, Chatbots, Transfer Learning, Big Data, Stordata, Dataplattform, Matematisk simulering, Statistikk, Dataanalyse, Analyse, Feilhåndtering, Skadeforsikring, Forsikring, Prismodellering, Økonomi, Rådgivning, Behovsanalyse, Behovskartlegging, Dokumentasjon, Kommunikasjon, Brukerintervjuer, Brukerinvolvering, Rapportering, GDPR, Stakeholder-analyse, Datadrevet innovasjon, API, Markedsanalyse, Innsiktsarbeid, Mobprogrammering, AML, CI/CD, Teamledelse, Tverrfaglig teamarbeid, Tverrfaglig team, Teamutvikling, Infrastructure as Code (IaC), Infrastruktur, Idé- og konseptutvikling, Relasjonsdatabaser, Datapresentasjon, Plan- og strategiarbeid, Kundeansvar, Prosjektledelse, Risikovurdering, Kartlegging
+
+### Maskinlæring og data science
+
+scikit-learn, TensorFlow, PyTorch, PyTorch Lightning, Pandas, Koalas, PySpark, Databricks, MLflow, Caret, pycaret, darts, emblem, Azure Machine Learning workspace, Shiny, Streamlit, Jupyter, CUDA, Darknet, OpenCV, YOLOX, Objektdeteksjon, pm4py, spaCy, Natural Language Processing (NLP), OpenAI, Azure OpenAI, GPT-3, GPT-4, LLaMa, LangChain, Azure Search, Azure Cognitive Services, Google Vertex AI, Azure Data Lake, Avro, Parquet, Markdown
+
+### Skyteknologi, mellomvare og plattformer
+
+Azure, Azure Cloud, Azure DevOps, Azure DevOps Pipelines, Azure Pipelines, Azure Repos, Azure Service Bus, Azure Functions, Azure Keyvault, Azure Blob Storage, ADLS Gen2, Azure Resource Management, ARM templates, Azure Logic Apps, Azure Data Explorer, Azure Synapse Analytics, Azure Data Factory, Azure Databricks, Azure Kubernetes Service, Azure Container Instances, Azure Container Registry, Azure Web App, Azure EventHub, Azure CLI, Azure AD, Azure AI Search, Azure Machine Learning Studio, Terraform, Pulumi, Checkov, Apache Spark, Delta Lake, Structured Streaming, Unity Catalog, dbt, Looker, Apache Airflow, Cloud Composer, BigQuery, Snowplow, Kafka, Power BI, QlikView, Google Cloud, Google App Engine, Google Cloud Storage, AWS, Rancher, Docker, Docker Compose, Heroku, FTP
+
+### Programmeringsspråk
+
+Python, R, SQL, Scala, C#, C++, Matlab, SAS, LaTeX, HashiCorp Configuration Language, Kotlin, TypeScript, JavaScript, Bash
+
+### Teknologi, backend og frontend
+
+REST, REST API, OpenAPI, Swagger, OData, Serverless, Server Side Rendering, HTML, CSS, YAML, nox, FastAPI, Flask, Node.js, React, Next.js, Angular, Styled Components, yarn, plotly.js
+
+### Databaser
+
+SQL, Microsoft SQL Server, T-SQL, Azure SQL, SQL Analytics, PostgreSQL, MongoDB, CosmosDB, InfluxDB, Historian, Google Cloud SQL
+
+### Verktøy
+
+Git, GitHub, GitHub Actions, GitHub Pages, GitLab, Bitbucket, Bitbucket Pipelines, GitOps, Jira, Sentry.io, Ansible, Playwright, Postman, IntelliJ IDEA, Poetry, Visma, Current, Post-it og tusj
+
+### Metode
+
+Smidig prosess, Smidig, Scrum, DevOps, Intervju, Google design sprint
+
+### Brukt i 2026, ennå ikke registrert i Flowcase
+
+Kilde: kodeprosjekter og kundearbeid i Noras arbeidsområde.
+
+Claude og Claude Code, Agentiske arbeidsflyter, Model Context Protocol (MCP), Kantega LLM-proxy, Azure Container Apps, Azure Static Web Apps, Microsoft Entra ID, Prisma, uv, Podman, Presidio, Whisper, Polars, Prompt- og evalueringsdesign, Personvernvurderinger (DPIA)
+
+## Prosjekter fra Flowcase
+
+### Boligbyggelag: datastrategi, KI og dataplattform (09.2025 til nå · Prosjektleder, strategisk rådgiver)
+
+Kantega ble valgt som strategisk partner i konkurranse med 14 andre selskaper. Tre delprosjekter: strategi for teknologi- og dataplattform, mulighetsstudie KI og videreutvikling av dataplattform og Power BI. Nora har totalansvaret for prosjekt, budsjett og kunderelasjon, og ledet mulighetsstudien som ga et toårig prioritert KI-veikart og et beslutningsrammeverk.
+
+Ferdigheter: Plan- og strategiarbeid, Datadrevet innovasjon, Kundeansvar, Prosjektledelse, Risikovurdering, Kartlegging
+
+### Mediehus: team kundeinnsikt (03.2024 til nå · Data Scientist)
+
+Nye kundemodeller for strømmetjenesten i dbt og Looker, churnprediksjon og avansert analyse. Nora har også tatt ansvar for prosessforbedringer: mobprogrammering, reviewprosesser, branchingstrategier og kontinuerlige leveranser. sannsynlighetsmodell for VM med Poisson-simulering.
+
+Ferdigheter: BigQuery, dbt, Looker, Google Cloud, Apache Airflow, Cloud Composer, Snowplow, Kafka, Google Vertex AI, Bitbucket Pipelines, GitOps, Ansible, SQL, Python, AWS
+
+### Statlig energiforetak: etablering av dataplattform (04.2023 til 04.2024 · Tech-lead, arkitekt)
+
+Kjerneteamet som etablerte foretakets dataplattform i Azure. Rådgivning om innretning, prioritering av use case, arkitektur og design, vasking og harmonisering av data, rutiner for forvaltning av dataverdikjeder og Power BI-rapportering. Første use case var sannsynlighet for avvik i støttede prosjekter.
+
+Ferdigheter: Azure Databricks, Unity Catalog, Terraform, Checkov, Azure Pipelines, Azure Keyvault, ADLS Gen2, MLflow, Azure Functions, Power BI, LangChain, GPT-4, GPT-3.5, Arkitekturprinsipper, Infrastructure as Code (IaC)
+
+### Bransjeorganisasjon for nettselskaper: spørsmålstjeneste på tekniske veiledere med GPT-4 (09.2023 til 11.2023 og 01.2024 til 04.2024 · Data Scientist)
+
+Pilot med RAG over bransjens tekniske veiledere, presentert på en bransjekonferanse i november 2023 og videreutviklet i 2024. Nora hadde ansvar for all infrastruktur (Terraform, GitHub Actions, Azure i kundens tenant), initiell modell og frontend, og senere modeller som begrenser hallusinering og øker svarkvaliteten.
+
+Ferdigheter: GPT-4, Azure OpenAI, Azure AI Search, LangChain, CosmosDB, MongoDB, Streamlit, Docker, FastAPI, Azure Web App, Azure Container Instances, Store språkmodeller, Generativ KI, Chatbots
+
+### Kantega: CVlifter (02.2023 til 12.2023 · Data Scientist)
+
+Python-pakke som analyserer CV-kvalitet med regelbasert og LLM-basert scoring (GPT-3 og GPT-4). Nora hadde også automatisk testing og infrastruktur.
+
+Ferdigheter: GPT-3, GPT-4, LLaMa, OpenAI, spaCy, NLP, Transfer Learning, PyTorch, PyTorch Lightning, FastAPI, Angular, TypeScript, Playwright, nox, Terraform, Azure Container Registry, Docker Compose, CI/CD, Teamledelse
+
+### Kommunalt parkeringsselskap: dashboard for bruk av parkeringsflåten (04.2023 til 05.2023 · Rådgiver, arkitekt)
+
+Rådgivning om valg av dataplattform og arkitekturskisser. Kunden valgte en dataplattform i Azure Databricks fremfor direkte Power BI-kobling.
+
+Ferdigheter: Dataplattform, Azure Databricks, Azure Data Lake, Power BI, Datadrevet innovasjon
+
+### Meieri: MVP maskinlæring og meieridata (12.2022 · Prosjektleder, Data Scientist)
+
+Sensordata fra tusenvis av sensorer. Nora ledet prosjektet, vurderte datakvalitet, prioriterte use case og gjennomførte eksplorativ analyse, anomalideteksjon og process mining.
+
+Ferdigheter: pm4py, Pandas, scikit-learn, InfluxDB, Jupyter, Poetry
+
+### Maskinsynstartup: telling av personer i kjøretøy (02.2022 til 12.2022 · Utvikler, Data Scientist, Scrum Master)
+
+Maskinsyn for telling av personer i kjøretøy på ferger, med sanntidsprosessering på edge-enheter og innebygd personvern. Nora bidro med utvikling, devops, statistisk ytelsesanalyse, dataplattform i Google Cloud, kodekvalitet og modelltuning. Som scrum master innførte hun smidige arbeidsformer og lærte opp teamet.
+
+Ferdigheter: TensorFlow, PyTorch, YOLOv4, YOLOX, Darknet, OpenCV, CUDA, Objektdeteksjon, Google Cloud, Google App Engine, Google Cloud SQL, Rancher, Terraform, Ansible, Sentry.io, React, Next.js, Node.js, Flask, OpenAPI, Scrum, GDPR, Teamledelse, Teamutvikling
+
+### Naturvernorganisasjon: rangering av kommuner (07.2022 til 08.2022 · Data Scientist, utvikler)
+
+Forbedret og redesignet rangeringsmodellen som sammenligner kommunenes naturarbeid. Implementerte logikk i frontend og backend, deployet og visualiserte med Plotly.js.
+
+Ferdigheter: Kotlin, React, TypeScript, MongoDB, Flask, plotly.js, Heroku, Docker, Server Side Rendering, Statistikk
+
+### Bildelingsselskap: maskinlæringspilot med analyseplattform (12.2021 til 02.2022 · Data Scientist, Data Engineer)
+
+Pilot for bedre utnyttelse av bilflåten og kundeutvikling. Datainnhenting, modellutvikling i Azure Databricks, utrulling og tilgjengeliggjøring av modeller.
+
+Ferdigheter: Azure Databricks, MLflow, darts, pycaret, PostgreSQL, SQL Analytics, Power BI, Delta Lake, Parquet
+
+### Advokatfirma: datadrevet innsikt og effektivisering (11.2021 · Rådgiver)
+
+Totalansvar for innsiktsarbeid om risiko, kost og nytte av analyse og maskinlæring i et advokatfirma. Rapport med prioriterte forslag.
+
+Ferdigheter: Intervju, Behovskartlegging, Markedsanalyse, GDPR, Kommunikasjon
+
+### Forsikringsselskap: internt salgssystem (08.2021 · Rådgiver)
+
+Analyse av internt salgssystem over fire uker. Nora samlet innsikt om bevaring, kvalitetssikring og bruk av analysedata på tvers av forretningsområder, gjennomførte intervjuer og vurderte systemene teknisk.
+
+Ferdigheter: Rådgivning, Arkitektur, Stakeholder-analyse, Brukerintervjuer, Rapportering
+
+### Kantega: Internprosjekt AML og AI (03.2021 til 06.2021 · Data Scientist, Data Engineer)
+
+Støttet av Innovasjon Norge. Grafanalyse for å avdekke mistenkelige transaksjoner i antihvitvasking. Nora satte opp ML-infrastruktur i Azure med MLflow og Terraform.
+
+Ferdigheter: MLflow, Azure Databricks, Delta Lake, Structured Streaming, Azure Kubernetes Service, Terraform, ARM templates, R, Shiny, Streamlit, AML
+
+### Kantega: Internprosjekt Kanalytics (04.2021 til 02.2022 · Data Engineer, Data Scientist)
+
+Hele flyten fra økonomidata (timeføring, ordrereserve, regnskap, budsjett) via Azure Functions og Databricks til Azure SQL og Power BI, med infrastruktur i Terraform og Pulumi.
+
+Ferdigheter: Azure Functions, Azure Databricks, Azure SQL, Power BI, Terraform, Pulumi, OData, Visma, Current
+
+### Energikonsern: plattform for innsikt og analyse (02.2020 til 02.2021 · Data Engineer (Bouvet))
+
+Kjerneteam for arkitektur i en skalerbar dataplattform med høye sikkerhetskrav. Dataflyt fra heterogene kilder, Delta Lake i bronze, silver og gold, filbasert structured streaming, PySpark-standarder, DevOps-integrasjon, data science-pipelines etter scikit-learn-standard og Terraform-deployment.
+
+Ferdigheter: Azure Databricks, Delta Lake, Structured Streaming, PySpark, Koalas, Azure Synapse Analytics, Azure Data Explorer, Azure Service Bus, Azure EventHub, Terraform, Avro, Parquet, Power BI
+
+### Storkommune: etablering av datasjø (09.2019 til 04.2020 · Data Scientist, Data Engineer (Bouvet))
+
+Hovedansvar for kode og infrastruktur i Azure Databricks. Sensordata fra 16 000 punkter på minuttnivå for vann og avløp, styringsdata for helsetjenester, dashboards for kundeservice, kollektivtrafikk og sykkeltrafikk. Strenge krav til personvern, tilgangsstyring og sikker sone.
+
+Ferdigheter: Azure Databricks, Apache Spark, C#, T-SQL, Azure Data Factory, Azure EventHub, Azure Functions, Terraform, Pulumi, Power BI, GDPR, Anonymisering
+
+### Frende Skadeforsikring (arbeidsgiver): pilotprosjekter maskinlæring og aktuararbeid (01.2017 til 08.2019 · Data Scientist, aktuar)
+
+Totalansvar for maskinlæringspiloter i R, Python, SAS og SQL: simulering av bonusmodell, storskadesannsynlighet, fordelingsmodellering på kundenivå og lønnsomhet som klassifisering. Aktuarrapporter, prismodellering, tariffering og markedsanalyser i aktuaravdelingen for skadeforsikring.
+
+Ferdigheter: R, SAS, SQL, Python, emblem, QlikView, Skadeforsikring, Prismodellering, Matematisk simulering, GDPR
+
+### Arbeid i 2025 og 2026 som ennå ikke ligger i Flowcase
+
+Kilde: Noras arbeidsområde. Kunder er anonymisert og beskrevet med bransje.
+
+- Finansieringsselskap (2026). Tilbud på KI-arbeid, Nora som leveranseleder og ekspert. Kom til finalerunde.
+- Konserthus (2026). Smartluft fase 1: prognoser for ventilasjon basert på CO2, bookinger og belegg, sammen med leverandøren av byggautomasjon.
+- Innovasjonsklynge (2026). KI-veiviser for ledere, et chatbasert modenhets- og veikartverktøy på Claude via Kantegas LLM-proxy. Pre-read og tre innlegg på en regional innovasjonskonferanse.
+- Regional næringsaktør (2025 og 2026). Workshop om KI i praksis og KI-workshop med egen veiviser.
+- Boligbyggelag, styreportal (2026). Personvernvurdering og workshop om smart søk. Styresamling om KI i styrearbeidet.
+- Ideell organisasjon (2026). Ledersamling og strategisk veikart for KI.
+- Ledergrupper i energi, elektrobransjen, shipping, reiseliv og sjømat (2025 og 2026). Lederworkshops om agentisk KI.
+- Direktorat (november 2026). Mini-workshop om agentidentitet.
+- Direktorat. Kamerautredning.
+- Direktorat. KI-rådgivning i tilbud på rammeavtale.
+- Kommunesektoren (2026). Innspill i markedsdialog om nasjonal KI.
+- Kantega internt. Doffibot i produksjon, kursprogrammet kagentic, delt repo for agenter og skills, KI-policy, rapport om lønnsomhet i KI-rådgivning, kandidatkartlegging for data og KI i Bergen.
+
+## Stillinger
+
+- 08.2025 til nå | Kantega | Avdelingsleder og KI-lead, Bergen
+- 03.2021 til 07.2025 | Kantega | Data scientist
+- 08.2019 til 02.2021 | Bouvet | Data scientist
+- 01.2017 til 08.2019 | Frende Skadeforsikring | Aktuar og aktuarassistent
+- 02.2016 til 05.2017 | Prisguide | Kategori- og analyseansvarlig
+- 08.2015 til 10.2016 | Kuben Yrkesarena | Lærer
+- 01.2007 til 12.2020 | Sandviken IL og LSK Kvinner | Profesjonell fotballspiller og landslagsspiller
+
+Foreldrepermisjon juli til november 2021 og april 2024 til februar 2025.
+
+## Utdanning, sertifiseringer og kurs
+
+- 2024 til 2025 | Universitetet i Innlandet | Årsstudium i organisasjon og ledelse
+- 2017 til 2018 | Universitetet i Bergen | Master i statistikk, finans- og forsikringsmatematikk
+- 2014 til 2016 | Universitetet i Oslo | Bachelor i matematikk og økonomi
+- 2013 | University of Florida | Årsstudium
+- 2008 til 2012 | Knarvik VGS | TAF, fagbrev i produksjonselektronikk
+
+### Sertifiseringer
+
+- 09.2022 | Certified Scrum Product Owner (CSPO) | Glasspaper / Scrum Alliance
+- 05.2021 | Microsoft Certified: Azure Data Engineer Associate | Microsoft
+- 09.2020 | Databricks Certified Professional Data Scientist | Databricks
+- 11.2019 | Databricks Certified Associate Developer for Apache Spark 2.4 | Databricks
+- 12.2011 | CompTIA A+ | CompTIA
+
+### Kurs
+
+- 06.2022 | Ansattvalgt styremedlem | Styreforeningen
+- 09.2020 | MLflow: Managing the Machine Learning Lifecycle | Databricks
+- 10.2019 | Apache Spark tuning and best practices | Databricks
+- 10.2019 | Structured Streaming (with capstone) | Databricks
+- 2019 | Learning paths: Azure Data Science VM, Azure Databricks, Store data in Azure | Microsoft
+
+## Foredrag og publikasjoner
+
+Faste tema: «Derfor tar ikke KI jobben din», «Anta bias. Alltid» og «Ansvarlig kunstig intelligens er et lederansvar». Snakker også om prestasjonskultur med erfaring fra toppidrett. Tilpasser innholdet til publikum.
+
+- 11.2026 | Mini-workshop om agentidentitet | Direktorat
+- 10.2026 | Tre innlegg om KI for ledere | Regional innovasjonskonferanse
+- 10.2026 | Det er på tide å ta ansvar | Lederkonferanse i Bergen (ca. 140 ledere)
+- 10.2026 | KI i styrearbeidet | Styresamling i et boligbyggelag
+- 2026 | Agentisk KI, kart og terreng | Kedegåri Bergen og Loft
+- 2026 | Mindre risiko, mer fart | ODA-nettverk Bergen
+- 08.2026 | Lyntale | JavaZone
+- 08.2026 | Min vei til KI | TENK Tech Camp
+- 07.2026 | Podkast | Økonomiamatørene
+- 05.2026 | Foredrag | Tek Norge årskonferanse
+- 2026 | Derfor tar ikke KI jobben din | Smidig Digitalisering
+- 04.2026 | Ansvarlig KI er et lederansvar | Frokostmøte
+- 04.2026 | Hvorfor KI ikke tar jobbene våre | Bobler & Business
+- 03.2026 | KI-akademiet | Bergen Næringsråd
+- 03.2026 | AI i praksis: verdi og ledelse | Ledergruppe i et energiselskap
+- 03.2026 | Hvordan dra nytte av egne data med KI | Booster Conference
+- 02.2026 | Paneldebatt: Fra folkestyre til plattformstyre | Vestlandskonferansen
+- 01.2026 | Status: Generativ KI i Bergen 2025 | Generative AI Meetup
+- 09.2025 | Fra garderobeprat til git commit | JavaZone
+- 09.2025 | Workshop: Kunstig intelligens i praksis | Regional næringsaktør
+- 09.2025 | Kunstig intelligens i praksis | Building Innovation
+- 08.2025 | Debattinnlegg | Arendalsuka
+- 04.2025 | AI-verktøy for koding: en jungel av muligheter | ODA, HVL og SheCodes
+- 04.2025 | AI: Brilliant but Biased? | Norway Fintech Festival
+- 09.2023 | Anta bias. Alltid. | JavaZone
+- 05.2023 | Transformer models (like ChatGPT) | Storbank
+- 05.2023 | Workshop OpenAI og GPT-modeller | Energikonsern
+- 04.2023 | Detecting Inconsistencies in Financial Reports with LLMs | Norway Fintech Festival
+- 03.2023 | Anta bias. Alltid. | Booster Conference
+- 03.2023 | ML + UX = Sant? | Booster Conference
+- 01.2023 og 03.2023 | Transformermodeller: etiske utfordringer | Frokost@Kantega Bergen og Trondheim
+- 11.2022 | Maskinlæring og bærekraft | Make Data Smart Trondheim
+- 08.2022 | Workshop i kunstig intelligens med low code og åpne data | Kantega
+- 02.2022 til 06.2022 | Dataene dine er forretningens drivstoff | Frokost@Kantega Bergen, Oslo og Trondheim
+
+Interne foredrag og ledersamlinger for banker, mediehus, energiselskaper og boligbyggelag.
+
+### Publikasjoner og skriving
+
+- Masteroppgave (2018). Boosted GAMLSS in General Insurance: Case Studies in Travel and Auto Liability Insurance.
+- Kronikk i Dagens Næringsliv. «Faren ligger i det maskinen får rett om».
+- Debattinnlegg. «KI-bruk er ikke et mål i seg selv».
+- Kantega-bloggen (2021 til 2023). MLOps, AutoML, dataplattform, bias og kommunerangering.
+- LinkedIn. Rundt 90 innlegg siden 2021 om KI, ledelse og Bergen som KI-by.
+
+## Styre- og tillitsverv
+
+- 2026 til nå | Styremedlem, Dataforeningen Region Vest
+- 2023 til nå | Leder for programkomiteen, Make Data Smart Bergen
+- 2022 til 2024 | Ansattvalgt 1. varamedlem, styret i Kantega
+- 2021 til nå | Medlem av faggruppeledelsen for Data Science og AI, Kantega
+
+## Keeper på toppnivå
+
+Keeper for Sandviken IL, LSK Kvinner og A-landslaget fra 2007 til 2020. Seriemester, cupmester og EM-sølvmedaljist. Over 15 år som toppidrettsutøver. Erfaringen brukes i foredrag om prestasjonskultur, tempo og presisjon i tech og ledelse.
+
+## Slik bruker du profilen
+
+- Matching mot oppdrag. Bruk ferdighetslisten i nora.json for eksakt match mot krav, og prosjektlisten for dokumentert erfaring med periode og rolle.
+- Foredrag og paneler. Tema og tidligere arenaer står under formidling. Hovedsiden har videoer og bilder.
+- Ledelse og styreverv. Seksjonen om ledelse og rådgivning samler leder-, prosjekt- og styreerfaring på ett sted.
+- Kildekritikk. Flowcase-data er fra mars 2026. Arbeid etter det er merket med kilde. Kunder er anonymisert med bransje. Tall skal brukes slik de står, uten å utvides.
+- Kontakt. Henvendelser går til nora@kantega.no . Ikke bruk andre adresseformer.
+
+```
+Filer for maskinlesing
+  /llms.txt            kort profil i Markdown-aktig tekst
+  /llms-full.txt       hele profilen som tekst
+  /nora.json           JSON-LD Person med ferdigheter, prosjekter, foredrag og verv
+  /for-agenter/        denne siden
+```
+
+## Ta kontakt
+
+- E-post: nora@kantega.no
+- Telefon: +47 958 20 097
+- LinkedIn: linkedin.com/in/ki-nora
+- Arbeidsgiver: kantega.no
