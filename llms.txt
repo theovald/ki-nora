@@ -1,0 +1,58 @@
+# Nora Gjøen-Gjøsæter
+
+> Avdelingsleder og KI-lead i Kantega Bergen. Statistiker og tidligere aktuar med over åtte år fra anvendt maskinlæring, dataplattformer og språkmodeller. Leder KI-avdelingen, fasiliterer ledergrupper og styrer, og bygger fortsatt selv. Tidligere landslagskeeper.
+
+Kontakt: nora@kantega.no, +47 958 20 097, https://www.linkedin.com/in/ki-nora
+Arbeidsgiver: Kantega (100 % ansatteid IT-konsulentselskap, Nora er medeier), https://www.kantega.no
+Sted: Bergen. Språk: norsk, engelsk. Født 1992.
+Kilde for ferdigheter og prosjekter: CV-eksport fra Flowcase, mars 2026. Nyere arbeid er merket.
+
+## Kompetanse i kortform
+
+- Ledelse: avdelingsleder med personal-, fag- og salgsansvar; prosjekt- og kundeansvar for strategiske partnerskap; tech-lead og arkitekt; scrum master; styreerfaring.
+- Rådgivning: mulighetsstudier, KI- og datastrategi, veikart, beslutningsrammeverk, ansvarlig KI, personvern, anbud og offentlige anskaffelser, lederworkshops.
+- Teknisk: språkmodeller, RAG, agenter og MCP; dataplattformer på Databricks og Azure; statistikk, maskinlæring og simulering; infrastruktur som kode og CI/CD.
+- Formidling: JavaZone, Booster, Arendalsuka, Vestlandskonferansen, Norway Fintech Festival; leder programkomiteen for Make Data Smart; kronikker.
+
+## Stillinger
+
+- 08.2025 til nå: Kantega, avdelingsleder og KI-lead, Bergen
+- 03.2021 til 07.2025: Kantega, data scientist
+- 08.2019 til 02.2021: Bouvet, data scientist
+- 01.2017 til 08.2019: Frende Skadeforsikring, aktuar
+- 02.2016 til 05.2017: Prisguide, kategori- og analyseansvarlig
+- 08.2015 til 10.2016: Kuben Yrkesarena, lærer
+- 2007 til 2020: Sandviken IL og LSK Kvinner, profesjonell fotballspiller og landslagsspiller
+
+## Utdanning og sertifiseringer
+
+- Master i statistikk, finans- og forsikringsmatematikk, Universitetet i Bergen (2018)
+- Bachelor i matematikk og økonomi, Universitetet i Oslo (2016)
+- Årsstudium i organisasjon og ledelse, Universitetet i Innlandet (2025)
+- Årsstudium, University of Florida (2013). Fagbrev produksjonselektronikk, Knarvik VGS (2012)
+- CSPO (2022), Azure Data Engineer Associate (2021), Databricks Certified Professional Data Scientist (2020), Databricks Associate Developer Spark (2019), CompTIA A+ (2011)
+
+## Utvalgte prosjekter
+
+- Boligbyggelag (2025 til nå): prosjektleder og strategisk rådgiver for datastrategi, mulighetsstudie KI og dataplattform. Toårig KI-veikart og beslutningsrammeverk.
+- Mediehus (2024 til nå): kundemodeller og churn i dbt og Looker, prosessforbedring.
+- Statlig energiforetak (2023 til 2024): tech-lead og arkitekt for dataplattform i Azure Databricks.
+- Bransjeorganisasjon i kraftbransjen (2023 til 2024): RAG-tjeneste på tekniske veiledere med GPT-4, infrastruktur i kundens tenant.
+- Maskinsynstartup (2022): maskinsyn, dataplattform i Google Cloud, scrum master.
+- Energikonsern (2020 til 2021) og storkommune (2019 til 2020): dataplattformer i Databricks.
+- Frende Skadeforsikring, som ansatt (2017 til 2019): maskinlæringspiloter og aktuararbeid.
+- 2025 og 2026, ikke i Flowcase ennå: finansieringsselskap, konserthus, innovasjonsklynge, ideell organisasjon, ledergrupper i energi, shipping og sjømat, direktorater, kommunesektoren, Doffibot.
+
+## Verv
+
+- Styremedlem, Dataforeningen Region Vest (2026 til nå)
+- Leder for programkomiteen, Make Data Smart Bergen (2023 til nå)
+- Ansattvalgt 1. varamedlem, styret i Kantega (2022 til 2024)
+- Faggruppeledelse Data Science og AI, Kantega (2021 til nå)
+
+## Filer
+
+- [Full profil som tekst](llms-full.txt)
+- [Strukturerte data, JSON-LD](nora.json)
+- [Lesbar side for agenter](for-agenter/index.html)
+- [Hovedside med foredrag, tjenester og videoer](index.html)
